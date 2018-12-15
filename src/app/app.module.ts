@@ -1,3 +1,4 @@
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +10,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    BsDropdownModule.forRoot(),
     BrowserModule,
     AppRoutingModule
   ],
