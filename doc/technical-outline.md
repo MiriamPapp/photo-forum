@@ -19,6 +19,7 @@ The following functions must be supported:
 * multi-language support (German / English first)
 * deletion of posts (only the own, except for admins)
 * deletion of comments (only the own, except for admins)
+* move posts between categories
 
 The following functions will be ignored (for now):
 
