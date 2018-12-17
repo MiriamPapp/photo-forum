@@ -8,7 +8,7 @@ The following services are used:
 * Cognito   
   Using the service through AWS accounts would be much more difficult and would
   make creation of users through invitations nearly impractical. The target
-  users are not photographers, not programmers. Hopefully Cognito provides
+  users are photographers, not programmers. Hopefully Cognito provides
   a good user experience (to be explored).
   The alternative (using AWS accounts) would require more complex policies
   and cut out many users because of the necessary technical skills. But it
