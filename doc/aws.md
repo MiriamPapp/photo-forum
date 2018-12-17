@@ -20,3 +20,4 @@ The following services are used:
 * CloudFront  
   The contents of the S3 bucket should be hosted through CloudFront - at least
   the Angular application.
+  

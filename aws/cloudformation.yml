@@ -1,10 +1,7 @@
-WSTemplateFormatVersion: 2010-09-09
+AWSTemplateFormatVersion: 2010-09-09
+
 Resources:
   ForumS3Bucket:
     Type: 'AWS::S3::Bucket'
-    DependsOn:
-      - ForumS3Policy
-    DeletionPolicy: delete
-  ForumS3Policy:
-    Type: 'AWS::S3::BucketPolicy'
-    DeletionPolicy: delete
+    DeletionPolicy: Delete
+

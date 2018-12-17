@@ -7,6 +7,11 @@ photographers needs.
 The software is intended to be used by some photographers I (the author) know but may be used
 also by anone else.
 
+# AWS infrastructure
+
+To deploy the infrastructure see the README in the aws directory.
+
+# Angular application
 
 ## Development server
 
