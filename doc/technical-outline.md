@@ -24,12 +24,14 @@ The following functions will be ignored (for now):
 
 * e-mail notifications
 * local caching of content
+* pinning articles at the top of a category
 
 The following functionality should be supported some day:
 * search
 * public readability but member post only
 * automatic preview fetch for posted links (http://ogp.me)
 * notifications through different channels
+* technical support for voting (doing contests)
 
 Technical idea
 --------------
