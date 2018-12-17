@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 It aims to provide an experience like the Google+ groups with special support for
 photographers needs.
 
+The software is intended to be used by some photographers I (the author) know but may be used
+also by anone else.
+
 # AWS infrastructure
 The infrastructure is managed through serverless.
 See the AWS document in the doc folder.
