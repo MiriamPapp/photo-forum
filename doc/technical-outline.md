@@ -42,13 +42,12 @@ To be cost effective the solution uses a serverless setup on Amazon Web Services
 Storing a large number of data is possible with S3 which is also quite cheap. At the
 same time S3 offers many interesting features including:
 
-* a SQL like query language for JSON and CSV documents
+* a SQL like query language for JSON and CSV documents,   
+  this is available for queries on a document only, unfortunately
+  not for all documents within a bucket
 * auto expire for documents (with automatic deletion)
 * a REST API
 * access control on document level (if necessary)
-
-Especially the query possibilities make S3 a good backend for a single page
-web application.
 
 The idea is to allow any (authorized) client "create" access on the S3 bucket
 but to disallow deletions and changes to existing documents.

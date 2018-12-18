@@ -14,7 +14,8 @@ The following services are used:
   and cut out many users because of the necessary technical skills. But it
   would also provide the possibility to distribute the costs through the users.
 * S3  
-  The heart of the application. S3 is cheap and has SQL like select capabilities.
+  The heart of the application. S3 is a cheap storage which provides interesting
+  features.   
   It is planned to use S3 as a write-only storage for 'normal' users.
   Admin users have delete rights too to make management possible.
 * CloudFront  
