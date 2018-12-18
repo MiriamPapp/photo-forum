@@ -32,6 +32,15 @@
             "scripts": []
           },
           "configurations": {
+            "de": {
+              "aot": true,
+              "outputPath": "dist/foto-forum-de/",
+              "baseHref": "/de/",
+              "i18nFile": "src/locale/messages.de.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "de",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -41,7 +50,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
@@ -66,6 +75,9 @@
           "configurations": {
             "production": {
               "browserTarget": "foto-forum:build:production"
+            },
+            "de": {
+              "browserTarget": "foto-forum:build:de"
             }
           }
         },

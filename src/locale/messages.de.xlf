@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="0689271ea50e501ec218d31f7f7b1ec614e1a1a0" datatype="html">
+        <source>
+    Welcome to <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
+  </source>
+        <target>
+    Willkommen zu <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description"> The header on the start page</note>
+        <note priority="1" from="meaning">main title </note>
+      </trans-unit>
+      <trans-unit id="ea811c176d4528f07a02336afb690e295835edf4" datatype="html">
+        <source>Here are some links to help you start: </source>
+        <target>Hier sind einige Links mit denen Sie beginnen können: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description"> link list at the entry page</note>
+        <note priority="1" from="meaning">link list</note>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>
