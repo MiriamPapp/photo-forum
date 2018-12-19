@@ -11,7 +11,7 @@ AWS.
 
 
 To deploy the infrastructure components use the following command:
-`aws-vault exec <account> -- aws cloudformation deploy --stack-name foto-forum --template-file cloudformation.yml`
+`aws-vault exec <account> -- aws cloudformation deploy --stack-name photo-forum --template-file cloudformation.yml`
 
 `<account>` is your AWS account or your IAM identity which is used for running the services.
  

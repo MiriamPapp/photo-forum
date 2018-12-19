@@ -1,4 +1,4 @@
-# Foto-Forum
+# Photo-Forum
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 It aims to provide an experience like the Google+ groups with special support for

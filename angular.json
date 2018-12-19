@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "foto-forum": {
+    "photo-forum": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/foto-forum",
+            "outputPath": "dist/photo-forum",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -34,7 +34,7 @@
           "configurations": {
             "de": {
               "aot": true,
-              "outputPath": "dist/foto-forum-de/",
+              "outputPath": "dist/photo-forum-de/",
               "baseHref": "/de/",
               "i18nFile": "src/locale/messages.de.xlf",
               "i18nFormat": "xlf",
@@ -70,21 +70,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "foto-forum:build"
+            "browserTarget": "photo-forum:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "foto-forum:build:production"
+              "browserTarget": "photo-forum:build:production"
             },
             "de": {
-              "browserTarget": "foto-forum:build:de"
+              "browserTarget": "photo-forum:build:de"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "foto-forum:build"
+            "browserTarget": "photo-forum:build"
           }
         },
         "test": {
@@ -118,7 +118,7 @@
         }
       }
     },
-    "foto-forum-e2e": {
+    "photo-forum-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -127,11 +127,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "foto-forum:serve"
+            "devServerTarget": "photo-forum:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "foto-forum:serve:production"
+              "devServerTarget": "photo-forum:serve:production"
             }
           }
         },
@@ -147,5 +147,5 @@
       }
     }
   },
-  "defaultProject": "foto-forum"
+  "defaultProject": "photo-forum"
 }
