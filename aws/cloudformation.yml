@@ -4,4 +4,10 @@ Resources:
   ForumS3Bucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Delete
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - ServerSideEncryptionByDefault:
+            SSEAlgorithm: AES256
+
 
