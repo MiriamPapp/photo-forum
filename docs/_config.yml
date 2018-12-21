@@ -1,8 +1,7 @@
 # Site settings
 title: Photo Forum
-# email: frank@tegtmeyer.net
-description: > # this means to ignore newlines until "baseurl:"
-  Self-hosting of Google+-like communities on AWS
+description: Self-hosting of Google+-like communities on AWS
+title-separator: "-"
 baseurl: "/photo-forum" # the subpath of your site, e.g. /blog/
 url: "https://fte378.github.io/photo-forum/"
 github_username:  fte378

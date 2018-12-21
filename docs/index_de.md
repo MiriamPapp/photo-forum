@@ -1,6 +1,5 @@
 ---
-site.description: sss
-layout: default
+lang: de
 ---
 This page is also available [in English](./index).
 
