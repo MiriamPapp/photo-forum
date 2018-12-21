@@ -4,8 +4,8 @@ theme: jekyll-theme-cayman
 title: Photo forum software for AWS
 email: frank@tegtmeyer.net
 description: > # this means to ignore newlines until "baseurl:"
-  Photo-forum is a set of configuration and softwware whicnh allows
-  everyone to host a forum which acts like a Google+ comunity.
+  Photo-forum is a set of configuration and software which allows
+  everyone to host a forum which acts like a Google+ community.
   It is designed to be used by groups of photographers but is not
   limited to this. The goal is to make hosting extremely cheap by
   using only base services of Amazon Web Services (AWS).
