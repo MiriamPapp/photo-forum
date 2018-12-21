@@ -1,17 +1,11 @@
 # Site settings
-title: Photo forum software for AWS
-email: frank@tegtmeyer.net
+title: Photo Forum
+# email: frank@tegtmeyer.net
 description: > # this means to ignore newlines until "baseurl:"
-  Photo-forum is a set of configuration and software which allows
-  everyone to host a forum which acts like a Google+ community.  
-  It is designed to be used by groups of photographers but is not
-  limited to this.
-
-  One of the goals is to make hosting extremely cheap by
-  using only base services of Amazon Web Services (AWS).
-baseurl: "" # the subpath of your site, e.g. /blog/
+  Self-hosting of Google+-like communities on AWS
+baseurl: "/photo-forum" # the subpath of your site, e.g. /blog/
 url: "https://fte378.github.io/photo-forum/"
-github_username:  jekyll
+github_username:  fte378
 
 # Build Settings
 sass:
@@ -30,4 +24,5 @@ kramdown:
   syntax_highlighter: rouge
 jailed: false
 gfm_quirks: paragraph_end
-theme: jekyll-theme-cayman
+remote_theme: daattali/beautiful-jekyll
+
