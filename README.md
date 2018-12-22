@@ -3,6 +3,9 @@
 This project aims to provide an experience like the Google+ groups with special support for
 photographers needs.
 
+> For people interested in hosting the Photo forum there is a [dedicated website](https://fte378.github.io/photo-forum/index) which describes all necessary steps.  
+> Für alle, die ein Photo forum betreiben möchten, gibt es eine [Webseite mit genauen Anleitungen](https://fte378.github.io/photo-forum/index_de).
+
 The software is intended to be used by some photographers I (the author) know but may be used
 also by anone else including non-photographers.
 
