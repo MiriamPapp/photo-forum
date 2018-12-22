@@ -8,13 +8,13 @@ This page is also available [in English](../index).
 
 # Überblick
 
-Photoforum ist eine Sammlung von Anleitungen, Konfigurationsdateien und Programmen,
+Photo forum ist eine Sammlung von Anleitungen, Konfigurationsdateien und Programmen,
 die es jedem ermöglichen, sehr preiswert ein Forum für die Online-Kommunikation einzurichten,
-wobei man sich komplett von den Aforderungen und Einschränkungen sonstiger Forums-Dienstleister
+wobei man sich komplett von den Anforderungen und Einschränkungen sonstiger Forum-Dienstleister
 befreit.
 
-Photoforum ist dafür gemacht, auf Diensten der Amazon Web Services (AWS) eingesetzt zu werden.
-Dabei werden nur preiswerte Dienste benutzt und alle benutzten Dienste arbeiten serrverlos - das
+Photo forum ist dafür gemacht, auf Diensten der Amazon Web Services (AWS) eingesetzt zu werden.
+Dabei werden nur preiswerte Dienste benutzt und alle benutzten Dienste arbeiten serverlos - das
 heißt, es ist kein spezieller Server dafür bereitzustellen. Auf diese Weise bezahlt der
 Forumsbetreiber nur anhand des aktuellen Ressourcenverbrauchs, wobei viele der benutzten
 Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
@@ -25,15 +25,15 @@ Wenn Sie ein Photo forum betreiben wollen, müssen Sie einige Voraussetzungen er
 notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
 
 * **Rechner**  
-  Das ist ernst gemeint - Sie brauchen einen Rechner. Ein Tablet oder Smartphone reichen
+  Das ist ernst gemeint - Sie brauchen einen Rechner. Ein Tablet oder Smartphone reicht
   nicht aus. 
   Im Prinzip ist jeder Rechner benutzbar - egal ob er unter MS-Windows, Mac-OS, Linux oder
   irgendeinem Unix-Betriebssystem läuft.
 * **AWS-Konto**  
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
-  AWS verlangt während der Konto-Einrichtung die ANgabe eines Zahlungsmittels. Lassen Sie sich
+  AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
   davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
-  einrichten und das Photo forum wird sehr wenig Kosten produzieren.  
+  einrichten und das Photo forum wird sehr wenig Kosten verursachen.  
   Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach
   gibt es für die genutzten Dienste Freikontingente, so dass die Kosten sehr niedrig bleiben.  
   Um ein AWS-Konto einzurichten folgen Sie den Anweisungen in
@@ -52,5 +52,5 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   [git](https://git-scm.com)
   ist ein modernes dezentralisiertes Programmcode-Verwaltungssystem. Sie werden es benutzen,
   um alle Dateien für die Installation des Forums bereitzustellen und um diese aktuell zu halten.  
-  Um Python auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
+  Um git auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
