@@ -16,7 +16,7 @@ befreit.
 Photo forum ist dafür gemacht, auf Diensten der Amazon Web Services (AWS) eingesetzt zu werden.
 Dabei werden nur preiswerte Dienste benutzt und alle benutzten Dienste arbeiten serverlos - das
 heißt, es ist kein spezieller Server dafür bereitzustellen. Auf diese Weise bezahlt der
-Forumsbetreiber nur anhand des aktuellen Ressourcenverbrauchs, wobei viele der benutzten
+Forumbetreiber nur anhand des aktuellen Ressourcenverbrauchs, wobei viele der benutzten
 Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
 
 # Voraussetzungen
