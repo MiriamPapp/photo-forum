@@ -2,7 +2,7 @@
 title: "Photo Forum"
 description: "Self-hosting of Google+-like communities on AWS"
 title-separator: "-"
-baseurl: "/photo-forum" # the subpath of your site, e.g. /blog/
+baseurl: "/photo-forum/" # the subpath of your site, e.g. /blog/
 url: "https://fte378.github.io/photo-forum/"
 github_username:  "fte378"
 
