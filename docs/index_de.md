@@ -1,5 +1,8 @@
 ---
 lang: de
+title: Wie Sie ein Photo Forum erstellen
+gh-repo: https://github.com/fte378/photo-forum
+gh-badge: fork, follow
 ---
 This page is also available [in English](../index).
 
@@ -29,15 +32,6 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   nicht aus. 
   Im Prinzip ist jeder Rechner benutzbar - egal ob er unter MS-Windows, Mac-OS, Linux oder
   irgendeinem Unix-Betriebssystem läuft.
-* **AWS-Konto**  
-  Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
-  AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
-  davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
-  einrichten und das Photo forum wird sehr wenig Kosten verursachen.  
-  Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach
-  gibt es für die genutzten Dienste Freikontingente, so dass die Kosten sehr niedrig bleiben.  
-  Um ein AWS-Konto einzurichten folgen Sie den Anweisungen in
-  _"[Einrichtung eines AWS-Kontos"](../awssetup_de)_.
 * **Python**  
   Etliche der hier benutzten Programme sind in der
   [Programmiersprache Python](https://www.python.org/) verfaßt. Deswegen
@@ -54,3 +48,12 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   um alle Dateien für die Installation des Forums bereitzustellen und um diese aktuell zu halten.  
   Um git auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
+* **AWS-Konto**  
+  Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
+  AWS verlangt während der Konto-Einrichtung die ANgabe eines Zahlungsmittels. Lassen Sie sich
+  davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
+  einrichten und das Photo forum wird sehr wenig Kosten produzieren.  
+  Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach
+  gibt es für die genutzten Dienste Freikontingente, so dass die Kosten sehr niedrig bleiben.  
+  Um ein AWS-Konto einzurichten folgen Sie den Anweisungen in
+  _"[Einrichtung eines AWS-Kontos"](../awssetup_de)_.
