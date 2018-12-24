@@ -54,7 +54,40 @@ is the top level directory of your installation.
 
 # Setup on Mac-OS (or Linux/Unix)
 
-bla bla bla
+1. Open your terminal application - either by looking for it in the Applications/Utilities folder
+   or by using Spotlight. For using Spotlight simply press Cmd-Space and type the first letters
+   of your application name - `ter` should be enough to find the Terminal application. If it's
+   selected press Enter.
+   On Linux or other Unix system it highly depends on your environment how to do it. On text
+   only systems you don't have to do anything special - you are using a terminal right after logging
+   into the system.
+2. On Mac-OS your running shell should be the `Bourne again shell`(bash). If you use Linux it should
+   be bash too - on other Unix like systems you have to adapt the following steps for your shell.   
+   To check your running shell exec ute the following command:
+   ```Shell
+   env | grep ^SHELL=
+   ```
+   This should print out: `SHELL=/bin/bash`  or `SHELL=/usr/bin/bash`  or even `SHELL=/usr/local/bin/bash`  
+   The important part is that the last word is `bash`.
+3. Enter the following commands:
+    ```Shell
+    cd
+    echo "export PHOTOFORUM=${HOME}/PhotoForum" >> .bash_profile
+    ```
+4. Close your terminal window and open a new one (see step one). Enter the following command:
+   ```Shell
+   env | grep PHOTOFORUM
+   ```
+   This should print out something like: `PHOTOFORUM=/Users/Tim/PhotoForum` where Tim is your
+   user name. On Linux and other Unix like systems it is more likely: `PHOTOFORUM=/home/Tim/PhotoForum`.
+5. Now enter the following commands:
+   ```Shell
+   mkdir ${PHOTOFORUM}
+   cd ${PHOTOFORUM}
+   ```
+   This should work without any errors. The command `pwd` should print out `/Users/Tim/PhotoForum` or
+   `/home/Tim/PhotoForum` now.
+
 
 # Result
 

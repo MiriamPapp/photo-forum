@@ -20,7 +20,9 @@ and often there is a free contingent for many services on AWS.
 # Prerequisites
 
 If you want to host Photo-Forum you will need some things in advance. There are descriptions
-how to set up all the needed stuff.
+how to set up all the needed stuff. The users of the forum will need their Internet browser
+only - they don't have to set anything up. The following first requirement is only needed
+for the person hosting a Photo-Forum. The users will use their usual device (PC, tablet, smartphone).
 
 1. **computer**  
   This is a real requirement. You need a computer. A tablet or smartphone will not be enough.

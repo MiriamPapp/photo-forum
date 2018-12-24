@@ -25,7 +25,9 @@ Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
 # Voraussetzungen
 
 Wenn Sie ein Photo-Forum betreiben wollen, müssen Sie einige Voraussetzungen erfüllen. Für alle
-notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
+notwendigen Arbeitsschritte gibt es hier eine Beschreibung.  
+Die Benutzer eines Photo-Forums müssen nichts installieren - sie benutzen für den Zugriff
+einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
 
 1. **Rechner**  
   Das ist ernst gemeint - Sie brauchen einen Rechner. Ein Tablet oder Smartphone reicht
@@ -35,7 +37,7 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
 2. **Installations-Umgebung**  
   Um alle Installationsschritte einfacher und nachvollziehbarer zu machen, werde ich
   konkrete Anweisungen für jeden Arbeitsschritt geben.    
-  Die Software wir nur für ihren aktuellen Systembenutzer installiert und alle Komponenten
+  Die Software wird nur für ihren aktuellen Systembenutzer installiert und alle Komponenten
   werden unterhalb eines einzigen Ordners in ihrem _Heimat-Ordner_ gespeichert.
   Bitte folgen Sie als erstes den Anweisungen in _"[Einrichten der Installations-Umgebung](../envsetup_de)"_.
 3. **Python**  
