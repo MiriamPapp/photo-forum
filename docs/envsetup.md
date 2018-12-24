@@ -92,6 +92,6 @@ is the top level directory of your installation.
 # Result
 
 The result of your work is the defined environment variable and the top level directory
-which will contain all needed tools to run Photo form.
+which will contain all needed tools to run Photo-Forum.
 
-Now go back to the _"[Start page](../index)"_ anf follow the instructions to install Python.
+Now go back to the _"[Start page](../index)"_ and follow the instructions to install Python.
