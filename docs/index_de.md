@@ -1,8 +1,7 @@
 ---
 lang: de
 title: Wie Sie ein Photo Forum erstellen
-gh-repo: https://github.com/fte378/photo-forum
-gh-badge: fork, follow
+subtitle: '2018-12-24'
 ---
 This page is also available [in English](../index).
 
@@ -11,7 +10,8 @@ This page is also available [in English](../index).
 
 # Überblick
 
-Photo forum ist eine Sammlung von Anleitungen, Konfigurationsdateien und Programmen,
+[Photo forum](https://github.com/fte378/photo-forum)
+ist eine Sammlung von Anleitungen, Konfigurationsdateien und Programmen,
 die es jedem ermöglichen, sehr preiswert ein Forum für die Online-Kommunikation einzurichten,
 wobei man sich komplett von den Anforderungen und Einschränkungen sonstiger Forum-Dienstleister
 befreit.
@@ -50,7 +50,7 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
 * **AWS-Konto**  
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
-  AWS verlangt während der Konto-Einrichtung die ANgabe eines Zahlungsmittels. Lassen Sie sich
+  AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
   davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
   einrichten und das Photo forum wird sehr wenig Kosten produzieren.  
   Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach

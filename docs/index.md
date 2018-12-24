@@ -1,7 +1,6 @@
 ---
 title: How to host a Photo Forum
-gh-repo: https://github.com/fte378/photo-forum
-gh-badge: fork, follow
+subtitle: 'posted: 2018-12-24'
 ---
 Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
 
@@ -9,7 +8,8 @@ Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
 
 # Introduction
 
-Photo forum is a set of documentation, configuration files, and software which enables
+[Photo forum](https://github.com/fte378/photo-forum)
+is a set of documentation, configuration files, and software which enables
 anyone to run a community with very low financial requirements and without the need
 to accept restrictions and regulations of community providers.
 
