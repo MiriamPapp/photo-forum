@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Wie Sie ein Photo Forum erstellen
+title: Wie Sie ein Photo-Forum erstellen
 subtitle: '2018-12-24'
 ---
 This page is also available [in English](../index).
@@ -10,13 +10,13 @@ This page is also available [in English](../index).
 
 # Überblick
 
-[Photo forum](https://github.com/fte378/photo-forum)
+[Photo-Forum](https://github.com/fte378/photo-forum)
 ist eine Sammlung von Anleitungen, Konfigurationsdateien und Programmen,
 die es jedem ermöglichen, sehr preiswert ein Forum für die Online-Kommunikation einzurichten,
 wobei man sich komplett von den Anforderungen und Einschränkungen sonstiger Forum-Dienstleister
 befreit.
 
-Photo forum ist dafür gemacht, auf Diensten der Amazon Web Services (AWS) eingesetzt zu werden.
+Photo-Forum ist dafür gemacht, auf Diensten der Amazon Web Services (AWS) eingesetzt zu werden.
 Dabei werden nur preiswerte Dienste benutzt und alle benutzten Dienste arbeiten serverlos - das
 heißt, es ist kein spezieller Server dafür bereitzustellen. Auf diese Weise bezahlt der
 Forumbetreiber nur anhand des aktuellen Ressourcenverbrauchs, wobei viele der benutzten
@@ -24,7 +24,7 @@ Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
 
 # Voraussetzungen
 
-Wenn Sie ein Photo forum betreiben wollen, müssen Sie einige Voraussetzungen erfüllen. Für alle
+Wenn Sie ein Photo-Forum betreiben wollen, müssen Sie einige Voraussetzungen erfüllen. Für alle
 notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
 
 1. **Rechner**  
@@ -58,7 +58,7 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
   AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
   davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
-  einrichten und das Photo forum wird sehr wenig Kosten produzieren.  
+  einrichten und das Photo-Forum wird sehr wenig Kosten produzieren.  
   Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach
   gibt es für die genutzten Dienste Freikontingente, so dass die Kosten sehr niedrig bleiben.  
   Um ein AWS-Konto einzurichten folgen Sie den Anweisungen in

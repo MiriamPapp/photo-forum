@@ -1,5 +1,5 @@
 # Site settings
-title: "Photo Forum"
+title: "Photo-Forum"
 description: "Self-hosting of Google+-like communities on AWS"
 title-separator: "-"
 baseurl: "/photo-forum/" # the subpath of your site, e.g. /blog/
