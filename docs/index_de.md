@@ -27,12 +27,18 @@ Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
 Wenn Sie ein Photo forum betreiben wollen, müssen Sie einige Voraussetzungen erfüllen. Für alle
 notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
 
-* **Rechner**  
+1. **Rechner**  
   Das ist ernst gemeint - Sie brauchen einen Rechner. Ein Tablet oder Smartphone reicht
   nicht aus. 
   Im Prinzip ist jeder Rechner benutzbar - egal ob er unter MS-Windows, Mac-OS, Linux oder
   irgendeinem Unix-Betriebssystem läuft.
-* **Python**  
+2. **Installations-Umgebung**  
+  Um alle Installationsschritte einfacher und nachvollziehbarer zu machen, werde ich
+  konkrete Anweisungen für jeden Arbeitsschritt geben.    
+  Die Software wir nur für ihren aktuellen Systembenutzer installiert und alle Komponenten
+  werden unterhalb eines einzigen Ordners in ihrem _Heimat-Ordner_ gespeichert.
+  Bitte folgen Sie als erstes den Anweisungen in _"[Einrichten der Installations-Umgebung](../envsetup_de)"_.
+3. **Python**  
   Etliche der hier benutzten Programme sind in der
   [Programmiersprache Python](https://www.python.org/) verfaßt. Deswegen
   benötigen Sie einen installierten Python-Interpreter, der für nahazu jedes Betriebssystem zur
@@ -42,13 +48,13 @@ notwendigen Arbeitsschritte gibt es hier eine Beschreibung.
   von irgendwelchen Python-Komponenten zu stören.  
   Um Python auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Python auf Ihrem Rechner installieren](../pythonsetup_de)"_.
-* **git**  
+4. **git**  
   [git](https://git-scm.com)
   ist ein modernes dezentralisiertes Programmcode-Verwaltungssystem. Sie werden es benutzen,
   um alle Dateien für die Installation des Forums bereitzustellen und um diese aktuell zu halten.  
   Um git auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
-* **AWS-Konto**  
+5. **AWS-Konto**  
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
   AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
   davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
