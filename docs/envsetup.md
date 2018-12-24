@@ -60,3 +60,5 @@ bla bla bla
 
 The result of your work is the defined environment variable and the top level directory
 which will contain all needed tools to run Photo form.
+
+Now go back to the _"[Start page](../index)"_ anf follow the instructions to install Python.
