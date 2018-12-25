@@ -52,7 +52,7 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
   _"[Python auf Ihrem Rechner installieren](../pythonsetup_de)"_.
 4. **git**  
   [git](https://git-scm.com)
-  ist ein modernes dezentralisiertes Programmcode-Verwaltungssystem. Sie werden es benutzen,
+  ist ein modernes dezentralisiertes Programmcode-Verwaltungssystem. Sie werden es brauchen,
   um alle Dateien für die Installation des Forums bereitzustellen und um diese aktuell zu halten.  
   Um git auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
