@@ -24,7 +24,7 @@ how to set up all the needed stuff. The users of the forum will need their Inter
 only - they don't have to set anything up. The following first requirement is only needed
 for the person hosting a Photo-Forum. The users will use their usual device (PC, tablet, smartphone).
 
-1. **computer**  
+1. **Computer**  
   This is a real requirement. You need a computer. A tablet or smartphone will not be enough.
   Any computer will do - running MS-Windows, Mac-OS, Linux or any other Unix like system.
 2. **Installation environment**  
