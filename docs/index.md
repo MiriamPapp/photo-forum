@@ -44,7 +44,7 @@ for the person hosting a Photo-Forum. The users will use their usual device (PC,
   _"[How to install Python on your computer](./pythonsetup)"_.
 4. **git**  
   [git](https://git-scm.com) is a modern decentralized source code management system. You will use
-  it to get all the files for your installation and to keep them up to date.   
+  it to get all needed files for your installation and to keep them up to date.   
   To set up git on your computer follow the instructions in
   _"[How to install git on your computer](./gitsetup)"_.
 5. **AWS-account**  
