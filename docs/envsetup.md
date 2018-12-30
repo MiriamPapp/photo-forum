@@ -5,8 +5,8 @@ title: Set up your installation environment
 Diese Seite ist auch [auf Deutsch](./envsetup_de) verfügbar.
 
 To make all installation steps easier I will give you the exact steps for installation.
-It will make available all needed software for your current system user and it will keep
-all needed pieces together as much as possible.   
+The first step is the preparation of your environment. All other steps depend on this
+first step.     
 The whole installation will be done in your _home directory_ and all the steps depend
 on setting up an environment variable called `PHOTOFORUM`. The value of this variable
 is the top level directory of your installation.
