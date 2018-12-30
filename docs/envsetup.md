@@ -2,7 +2,7 @@
 title: Set up your installation environment
 ---
 
-Diese Seite ist auch [auf Deutsch](./envsetup_de) verfügbar.
+Diese Seite ist auch [auf Deutsch](../envsetup_de) verfügbar.
 
 To make all installation steps easier I will give you the exact steps for installation.
 The first step is the preparation of your environment. All other steps depend on this
