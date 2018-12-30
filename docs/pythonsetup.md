@@ -2,7 +2,7 @@
 title: How to install Python on your computer
 ---
 
-Diese Seite ist auch [auf Deutsch](./pythonsetup_de) verfügbar.
+Diese Seite ist auch [auf Deutsch](../pythonsetup_de) verfügbar.
 
 # Preconditions
 
@@ -12,7 +12,7 @@ See the _"[Start page](../index)"_ for an overview.
 
 # Download the correct Python installer
 
-The starting popint for installing Python is the
+The starting point for installing Python is the
 [Download page on www.python.org](https://www.python.org/downloads/).
 
 There you can select the version for your operating system. Unless you have a *very old*
@@ -23,9 +23,12 @@ be the *macOS 64-bit installer*.
 The Windows installer does have "amd64" in it's name. Dont worry - this is the correct
 installer even if you have a computer with an Intel CPU.
 
+**Attention**: If you still use Windows XP (you really should not!) the latest supported
+Python version is 3.4. Don't try to use a newer version on this operating system.
+
 The Windows installer is a normal *.exe*-file which can be run from the download folder
 or even directly from the download dialogue within your internet browser.   
-The Mac-OS installer is in the package format which can be run by a double click.
+The Mac-OS installer comes in package format which can be run by a double click.
 
 # Installation on MS Windows
 
