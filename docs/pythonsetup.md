@@ -38,11 +38,30 @@ There is a whole
 
 It describes several ways to install Python so you would still have to decide
 some things that you possibly can't decide because of missing information or experience.
+So I will give you **one** method to install Python. It will be installed for the current
+Windows user only and will be completely contained inside the directory marked by the
+`PHOTOFORUM` environment variable.
 
-To make all installation steps easier I will give you the exact steps for installation.
-It will make available all needed software for your current system user and it will keep
-all needed pieces together as much as possible.   
-The whole installation will be done in your _home directory_.
+1. When you download the Python installer don't run it directly from your browser
+   but instead save it to your `Downloads` folder.
+2. Now open a windows shell (see [Set up your installation environment](../envsetup) how
+   to do it). Enter the following command (this is only one line!):   
+   ```Shell
+   %USERPROFILE%\Downloads\python-3.7.2-amd64.exe /passive TargetDir=%PHOTOFORUM%\py CompileAll=1 PrependPath=1 Include_test=0
+   ```
+   This installs Python and sets the PATH environment variable for the current Windows
+   user.
+3. Close the windwos shell and open a new one.
+4. Enter the following command:   
+   ```Shell
+   python --version
+   ```
+   This command must work without any error and it should print the version number of
+   your Python installation.
+5. The next command should also work without error and print the version number
+   of the pip command:   
+   ```Shell
+   pip --version
+   ```
 
-1. Open the Windows-Explorer (your systems file manager) and go to the downloads folder.  
-   Locate the downloaded Python installer (for example `python-3.7.2-amd64.exe`) and double-click it.
+# Installation on Mac-OS
