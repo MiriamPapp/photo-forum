@@ -28,8 +28,7 @@ installer even if you have a computer with an Intel CPU.
 **Attention**: If you still use Windows XP (you really should not!) the latest supported
 Python version is 3.4. Don't try to use a newer version on this operating system.
 
-The Windows installer is a normal *.exe*-file which can be run from the download folder
-or even directly from the download dialogue within your internet browser.
+The Windows installer is a normal *.exe*-file which can be run from the download folder.
 
 # Installation on MS Windows
 
