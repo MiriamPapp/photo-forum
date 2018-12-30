@@ -2,7 +2,7 @@
 title: Einrichten der Installations-Umgebung
 ---
 
-This page is also available [in English](./envsetup).
+This page is also available [in English](../envsetup).
 
 Um die Installation aller benötigten Komponenten möglichst einfach und nachvollziehbar
 zu gestalten, gebe ich genaue Anweisungen wie Sie vorgehen sollen.   
