@@ -56,7 +56,11 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
   um alle Dateien für die Installation des Forums bereitzustellen und um diese aktuell zu halten.  
   Um git auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Git auf Ihrem Rechner installieren](../gitsetup_de)"_.
-5. **AWS-Konto**  
+5. **AWS tools**  
+  AWS wird über das AWS Kommandozeilen-Werkzeug bedient. Um die benötigten Programme zu installieren
+   folgen Sie den Anweisungen in
+  _"[AWS-Programme installieren](./awstoolssetup_de)"_.
+6. **AWS-Konto**  
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
   AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
   davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten

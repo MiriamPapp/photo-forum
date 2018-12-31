@@ -51,7 +51,7 @@ Windows user only and will be completely contained inside the directory marked b
    ```
    This installs Python and sets the PATH environment variable for the current Windows
    user.
-3. Close the windwos shell and open a new one.
+3. Close the windows shell and open a new one.
 4. Enter the following command:   
    ```Shell
    python --version

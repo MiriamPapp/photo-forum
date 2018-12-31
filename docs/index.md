@@ -47,7 +47,10 @@ for the person hosting a Photo-Forum. The users will use their usual device (PC,
   it to get all needed files for your installation and to keep them up to date.   
   To set up git on your computer follow the instructions in
   _"[How to install git on your computer](./gitsetup)"_.
-5. **AWS-account**  
+5. **AWS tools**  
+  AWS is handled through the aws command line. To set up the needed tools follow the instructions in
+  _"[How to install the aws tools on your computer](./awstoolssetup)"_.
+6. **AWS-account**  
   Because you will run the service on AWS you need an account there. AWS requires you to give them
   a payment method in advance. Don't be afraid to do that - you can set limits and alarms for your
   costs and the software has a low footprint regarding costs. Usually you have to pay nothing
