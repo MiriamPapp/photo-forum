@@ -47,7 +47,7 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
 3. **Python**  
   Etliche der hier benutzten Programme sind in der
   [Programmiersprache Python](https://www.python.org/) verfaßt. Deswegen
-  benötigen Sie einen installierten Python-Interpreter, der für nahazu jedes Betriebssystem zur
+  benötigen Sie einen installierten Python-Interpreter, der für nahezu jedes Betriebssystem zur
   Verfügung steht. Bitte benutzen Sie möglichst die aktuellste Python-Version.  
   Auch wenn Ihr Betriebssystem schon Python enthält (zum Beispiel Mac-OS), empfiehlt es sich
   eine private Kopie von Python zu installieren, um nicht das Betriebssystem durch den Austausch
