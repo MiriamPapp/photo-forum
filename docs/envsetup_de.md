@@ -58,7 +58,7 @@ Programmkomponenten installiert werden.
    ```Batchfile
    echo %PHOTOFORUM%
    ```
-   Dieses Kommando muß einen VErzeichnis-Pfad ausgeben, z.B. `C:\Users\Tim\PhotoForum`.
+   Dieses Kommando muß einen Verzeichnis-Pfad ausgeben, z.B. `C:\Users\Tim\PhotoForum`.
    Wenn entweder nichts oder aber `%PHOTOFORUM%` ausgegeben wird, dann haben Sie irgendwo einen
    Fehler gemaht und müssen von vorn beginnen.   
 
