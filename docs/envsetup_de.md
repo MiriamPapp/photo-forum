@@ -49,14 +49,24 @@ Programmkomponenten installiert werden.
    ![Variable](../img/variable_de.jpg)
 6. Geben Sie `PHOTOFORUM` im Feld _Name der Variablen_ ein.  
    Danach geben Sie `%USERPROFILE%\PhotoForum` in das Feld _Wert der Variablen_ ein und
-   klicken auf OK.
-7. Starten Sie Ihren Rechner neu!
+   klicken auf OK.   
+
+7. **Starten Sie Ihren Rechner neu!**   
+
 8. Nachdem Ihr Rechner wieder läuft, starten Sie erneut eine Eingabeaufforderung (siehe
    Schritt 1). Geben Sie dann das folgende Kommando ein und drücken danach die Enter-Taste:   
    ```Batchfile
+   echo %PHOTOFORUM%
+   ```
+   Dieses Kommando muß einen VErzeichnis-Pfad ausgeben, z.B. `C:\Users\Tim\PhotoForum`.
+   Wenn entweder nichts oder aber `%PHOTOFORUM%` ausgegeben wird, dann haben Sie irgendwo einen
+   Fehler gemaht und müssen von vorn beginnen.   
+
+9. Geben Sie das folgende Kommando ein und drücken danach die Enter-Taste:   
+   ```Batchfile
    mkdir %PHOTOFORUM%
    ```
-9. Wenn Sie danach das folgende Kommando ausführen, solllte keinerlei Fehler ausgegeben werden:  
+10. Wenn Sie danach das folgende Kommando ausführen, solllte keinerlei Fehler ausgegeben werden:  
    ```Batchfile
    cd %PHOTOFORUM%
    ```

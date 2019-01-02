@@ -40,14 +40,23 @@ is the top level directory of your installation.
    enter the name and the value of an environment variable.   
    ![Variable](../img/variable.png)
 6. Enter `PHOTOFORUM` into the Variable name field.
-   Then enter `%USERPROFILE%\PhotoForum` into the Variable value field. and click on OK.
-7. Restart your computer.
+   Then enter `%USERPROFILE%\PhotoForum` into the Variable value field. and click on OK.  
+
+7. **Restart your computer!**   
+
 8. After your computer comes up again do the things from step 1 again, so that you have
-   an open shell window. Enter the following command:   
+   an open shell window. Enter the following command:
+   ```Batchfile
+   echo %PHOTOFORUM%
+   ```
+   This must output a directory path - for example `C:\Users\Tim\PhotoForum`. If there is no
+   output or the output is `%PHOTOFORUM%` then you did fail at some point and you have to start
+   from the beginning.  
+9. Now enter the following command:   
    ```Batchfile
    mkdir %PHOTOFORUM%
    ```
-9. If you enter the following command it should work without any error.   
+10. If you enter the following command it should work without any error.   
    ```Batchfile
    cd %PHOTOFORUM%
    ```
