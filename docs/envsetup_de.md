@@ -50,8 +50,8 @@ Programmkomponenten installiert werden.
 6. Geben Sie `PHOTOFORUM` im Feld _Name der Variablen_ ein.  
    Danach geben Sie `%USERPROFILE%\PhotoForum` in das Feld _Wert der Variablen_ ein und
    klicken auf OK.
-7. Starten Sie Ihren Rechner neu (nicht _unbedingt_ nötig, dient aber zur Kontrolle).
-8. Nachdem Ihr Rechner wieder läuft, starten Sie erneut eine EIngabeaufforderung (siehe
+7. Starten Sie Ihren Rechner neu!
+8. Nachdem Ihr Rechner wieder läuft, starten Sie erneut eine Eingabeaufforderung (siehe
    Schritt 1). Geben Sie dann das folgende Kommando ein und drücken danach die Enter-Taste:   
    ```Batchfile
    mkdir %PHOTOFORUM%
