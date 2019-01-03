@@ -6,7 +6,7 @@ Diese Seite ist auch [auf Deutsch](../pythonsetup_de) verfügbar.
 
 # Preconditions
 
-In order to install Python on your system you need to do the Steps
+In order to install Python on your system you need to do the steps
 in _"[Set up your installation environment](../envsetup)"_ first.   
 See the _"[Start page](../index)"_ for an overview.
 
