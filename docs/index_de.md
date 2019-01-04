@@ -69,7 +69,7 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
 5. **AWS tools**  
   AWS wird über das AWS Kommandozeilen-Werkzeug bedient. Um die benötigten Programme zu installieren
    folgen Sie den Anweisungen in
-  _"[AWS-Programme installieren](./awstoolssetup_de)"_.
+  _"[AWS-Programme installieren](../awstoolssetup_de)"_.
 6. **AWS-Konto**  
   Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
   AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
