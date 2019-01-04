@@ -5,6 +5,7 @@ title-separator: "-"
 baseurl: "/photo-forum/" # the subpath of your site, e.g. /blog/
 url: "https://fte378.github.io/photo-forum/"
 github_username:  "fte378"
+copyright: '2018-2019'
 
 # --- Navigation bar options --- #
 
