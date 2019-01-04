@@ -18,7 +18,7 @@ on its website.
 # Installation on MS Windows
 
 1. Open a windows shell (see [Set up your installation environment](../envsetup) how
-   to do it). Enter the following command (this is only one line!):   
+   to do it). Enter the following command:   
 
    ```Shell
    pip install awscli --upgrade
