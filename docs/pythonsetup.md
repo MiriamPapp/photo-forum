@@ -110,4 +110,4 @@ to use the command names python3 and pip3 instead of python or pip.
 
 You got a working Python installation which can be used for the next installation steps.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to install git.
+Now go back to the _"[Start page](../index)"_ and follow the instructions to install node.js.

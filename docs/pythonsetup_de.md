@@ -124,4 +124,4 @@ Das Ergebnis der Arbeitsschritte ist eine Python-Installation, die durch die fol
 Arbeitsschritte benutzt werden kann.
 
 Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
-zur Installation von git.
+zur Installation von node.js.

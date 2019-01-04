@@ -54,6 +54,12 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
   von irgendwelchen Python-Komponenten zu stören.  
   Um Python auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
   _"[Python auf Ihrem Rechner installieren](../pythonsetup_de)"_.
+4. **node.js und npm**   
+  [node.js](https://nodejs.org/de/) ist eine Laufzeitumgebung für JavaScript. Sie werden
+  es für die Ausführung von Verwaltungsprogrammen einsetzen. node.js beinhaltet ebenfalls
+  den Paketmanager `npm` für die Verwaltung von Javaskript-Programmpaketen.  Um node.js
+  auf Ihrem Rechner zu installieren folgen Sie den Anweisungen in
+  _"[node.js auf Ihrem Rechner installieren](../nosetup_de)"_.
 4. **git**  
   [git](https://git-scm.com)
   ist ein modernes dezentralisiertes Programmcode-Verwaltungssystem. Sie werden es brauchen,

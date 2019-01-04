@@ -45,15 +45,20 @@ This will only create frustration and support overhead.
   system tools.  
   To set up Python on your computer follow the instructions in
   _"[How to install Python on your computer](./pythonsetup)"_.
-4. **git**  
+4. **node.js and npm**   
+   [node.js](https://nodejs.org/en/) is a JavaScript runtime which also contains the
+   packet manager `npm` for Javascript packages. It will be used for management tasks.  
+   To set up node.js on your computer follow the instructions in
+   _"[How to install node.js on your computer](./nodesetup)"_.
+5. **git**  
   [git](https://git-scm.com) is a modern decentralized source code management system. You will use
   it to get all needed files for your installation and to keep them up to date.   
   To set up git on your computer follow the instructions in
   _"[How to install git on your computer](./gitsetup)"_.
-5. **AWS tools**  
+6. **AWS tools**  
   AWS is handled through the aws command line. To set up the needed tools follow the instructions in
   _"[How to install the aws tools on your computer](./awstoolssetup)"_.
-6. **AWS-account**  
+7. **AWS-account**  
   Because you will run the service on AWS you need an account there. AWS requires you to give them
   a payment method in advance. Don't be afraid to do that - you can set limits and alarms for your
   costs and the software has a low footprint regarding costs. Usually you have to pay nothing
