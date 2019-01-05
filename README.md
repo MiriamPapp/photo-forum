@@ -22,7 +22,7 @@ At the moment there is no usable functionality because the software is in a very
 
 If you want to serve the github pages on your computer (for example to change and test them),
 you need an [installed Ruby](https://www.ruby-lang.org/) interpreter.  
-Then call enter the following commands in your terminal window:  
+Then enter the following commands in your terminal window:  
 ```Shell
 gem install bundler jekyll
 cd docs  <- the directory in this project
