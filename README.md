@@ -18,7 +18,7 @@ to enter. It is not a social network and there is no intention to develop it int
 
 At the moment there is no usable functionality because the software is in a very early stage.
 
-# Local github pages
+## Local github pages
 
 If you want to serve the github pages on your computer (for example to change and test them),
 you need an [installed Ruby](https://www.ruby-lang.org/) interpreter.  
