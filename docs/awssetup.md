@@ -6,10 +6,10 @@ Diese Seite ist auch [auf Deutsch](../awssetup_de) verfügbar.
 
 # Create your root account
 
-First go to the [AWS homepage](https://aws.amazon.com). If you never
+First go to the [AWS homepage](https://aws.amazon.com/free/). If you never
 created an accout at AWS it looks like this:
 
-![Windows shell](../img/Amazon-Free-Tier.jpg)
+![Create Amazon account](../img/Amazon-Free-Tier.jpg)
 
 To start creating a new account click on `Create a Free Account`. The process to create
 the account is relatively straightforward. Amazon

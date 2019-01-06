@@ -71,11 +71,5 @@ einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
    folgen Sie den Anweisungen in
   _"[AWS-Programme installieren](../awstoolssetup_de)"_.
 6. **AWS-Konto**  
-  Da Sie das Forum bei AWS laufen lassen werden, benötigen Sie dort ein Konto.  
-  AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
-  davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
-  einrichten und das Photo-Forum wird sehr wenig Kosten produzieren.  
-  Normalerweise werden Sie im ersten Jahr bei AWS gar nichts bezahlen und auch danach
-  gibt es für die genutzten Dienste Freikontingente, so dass die Kosten sehr niedrig bleiben.  
   Um ein AWS-Konto einzurichten folgen Sie den Anweisungen in
   _"[Einrichtung eines AWS-Kontos"](../awssetup_de)_.
