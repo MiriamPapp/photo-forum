@@ -14,7 +14,7 @@ ein AWS-Konto angelegt haben, sieht die Seite etwa so aus:
 Um ein neues AWS-Konto zu erstellen, klicken Sie auf `Kostenloses Konto erstellen`.
 Die Einrichtung eines Kontos ist relativ einfach - Amazon
 [beschreibt den ganzen Prozeß](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
-in seiner Wissensdatenbank. Die Seite ist leider noch auf Englisch - eine deutsche Übersetzung liegt noch nicht vor.   
+in seiner Wissensdatenbank. Die Seite ist leider auf Englisch - eine deutsche Übersetzung liegt leider nicht vor.   
 Aber wie schon gesagt, ist der Prozess recht einfach und selbsterklärend.   
 Die Einrichtung eines Kontos ist auch
 [direkt über diese Seite](https://portal.aws.amazon.com/billing/signup#/start) möglich.
