@@ -8,7 +8,7 @@ This solution has two goals:
 The second goal somewhat dictates which AWS services are to be used.
 One of the cheapest services for storing information is S3.
 
-At the same time S3 is als very flexible regarding rights management,
+At the same time S3 is also very flexible regarding rights management,
 features and access methods. That's why we will use S3 to store the
 forum's contents.   
 To avoid other services the clients directly write to and read from
@@ -23,12 +23,12 @@ application running in the users browser. Anybody would be able to
 change the application or to create a new one which doesn't guarantee
 any security at all.
 
-That's why the S3 bucket will be set to "append only". This way users
+That's why the S3 bucket will be set to "append only" or "WORM" (write once, read multiple times). This way users
 only need the right to create new objects on the S3 bucket (and read
 rights of course).
 
 People can create posts and comments. Changes and deletions require
-special handling.
+special handling through deletion and update objects.
 
 Over time the S3 bucket my be filled by update and delete objects.
 The owner of the forum gets a maintenance program which consolidates
@@ -61,7 +61,7 @@ all images/posts/comments/pluses/votings.
 
 ## Format of the objects
 
-All objects are stored in JSON format because this easily usable
+All objects are stored in JSON format because this is easily usable
 in JavaScript applications. It would be possible to use more
 efficient storage formats (for example Google Protocol Buffers)
 but this would make debugging through the AWS console extremely
@@ -78,8 +78,8 @@ Fields:
 
 * **text** (mandatory)
   The text of the post.
-* **images** (optional)   
-  A list of references to image objects (text). The list may also be empty.
+* **reflist_images** (optional)   
+  A list of references to image objects (references are in text format). The list may also be empty.
 
 ### Comment object
 
