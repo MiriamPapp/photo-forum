@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --aot && aws-vault exec forumdev s3 sync dist/photo-forum s3://photo-forum"
+    "deploy": "ng build --prod --aot && aws-vault exec forumdev -- aws s3 sync dist/photo-forum s3://webhostingbucket"
   },
   "private": true,
   "dependencies": {
