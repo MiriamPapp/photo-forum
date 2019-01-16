@@ -14,5 +14,10 @@ To deploy the infrastructure components use the following command (all in one li
 `aws-vault exec forumdev -- aws cloudformation deploy --stack-name photo-forum
      --template-file cloudformation.yml --capabilities CAPABILITY_IAM`
 
+There are two scripts provided to assist deployment:
+
+- deploy.cmd for Windows  and
+- deploy.sh for Mac or Linux/Unix
+
 forumdev is your profile in aws-vault which is used to access AWS. See the user website
 for more information (https://fte378.github.io/photo-forum/).
