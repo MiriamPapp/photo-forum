@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: Setup for Photo-Forum
 
 Resources:
-  ForumS3Bucket:
+  ContentsBucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Delete
     Properties:
@@ -15,7 +15,7 @@ Resources:
         ServerSideEncryptionConfiguration:
         - ServerSideEncryptionByDefault:
             SSEAlgorithm: AES256
-  ForumWebhostingBucket:
+  WebhostingBucket:
     Type: AWS::S3::Bucket
     Properties:
       AccessControl: PublicRead
@@ -37,9 +37,9 @@ Resources:
             Resource: !Join 
               - ''
               - - 'arn:aws:s3:::'
-                - !Ref ForumWebhostingBucket
+                - !Ref WebhostingBucket
                 - /*
-      Bucket: !Ref ForumWebhostingBucket
+      Bucket: !Ref WebhostingBucket
   # Example for creating a Cognito User pool:
   #  https://gist.github.com/singledigit/2c4d7232fa96d9e98a3de89cf6ebe7a5
 
@@ -47,15 +47,16 @@ Resources:
 Outputs:
   WebsiteURL:
     Value: !GetAtt 
-      - ForumWebhostingBucket
+      - WebhostingBucket
       - WebsiteURL
     Description: URL for website hosted on S3
-  S3BucketSecureURL:
+  WebBucketSecureURL:
     Value: !Join 
       - ''
       - - 'https://'
         - !GetAtt 
-          - ForumWebhostingBucket
+          - WebhostingBucket
           - DomainName
-    Description: Name of S3 bucket to hold website content
-
+    Description: URL of S3 bucket to hold website content
+  WebBucketName:
+      Value: !Ref WebhostingBucket
