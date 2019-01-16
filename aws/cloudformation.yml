@@ -4,7 +4,7 @@ Description: Setup for Photo-Forum
 Resources:
   ForumS3Bucket:
     Type: 'AWS::S3::Bucket'
-    DeletionPolicy: Retain
+    DeletionPolicy: Delete
     Properties:
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
@@ -23,7 +23,7 @@ Resources:
         IndexDocument: index.html
         ErrorDocument: error.html
     DeletionPolicy: Delete
-  BucketPolicy:
+  WebHostingBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
       PolicyDocument:
