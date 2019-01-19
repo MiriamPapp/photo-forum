@@ -28,6 +28,24 @@ Diese Seite ist auch [auf Deutsch](../nodesetup_de) verfügbar.
    ```
    This command must also work without any error and it should print the version number of
    your npm command.
+6. Now install the Typescript compiler globally. Use the following command:   
+   ```Shell
+   npm install -g typescript
+   ```
+   If all went well, the following command prints the version number of the Typescript compiler - it must be higher than 3.2:  
+   ```Shell
+   tsc -v
+   ```
+7. Now install the Angular-CLI (also globally);
+   ```Shell
+   npm install -g @angular/cli
+   ```
+   The result can be checked with the following command. It must print out some informations about
+   your Angular install:  
+   ```Shell
+   ng version
+   ```
+
 
 # Installation on Mac-OS
 
@@ -53,9 +71,28 @@ Homebrew for the [Python installation](../pythonsetup).
    ```
    Also this command must work without any error and it should print the version number of
    your node package manager.
+4. Now install the Typescript compiler globally. Use the following command:   
+   ```Shell
+   npm install -g typescript
+   ```
+   If all went well, the following command prints the version number of the Typescript compiler - it must be higher than 3.2:  
+   ```Shell
+   tsc -v
+   ```
+5. Now install the Angular-CLI (also globally);
+   ```Shell
+   npm install -g @angular/cli
+   ```
+   The result can be checked with the following command. It must print out some informations about
+   your Angular install:  
+   ```Shell
+   ng version
+   ```
+
 
 # Result
 
 You got a working node.js installation which can be used for your administrative tasks.
+You have also install Angular-cli and the compiler for the Typescript language.
 
 Now go back to the _"[Start page](../index)"_ and follow the instructions to install git.

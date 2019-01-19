@@ -30,6 +30,23 @@ This page is also available [in English](../nodesetup).
    ```
    Auch dieses Kommando muß ohne Fehler funktionieren und die Versionsnummer des
    Node Packet Managers ausgeben.
+6. Installieren Sie nun in Ihrer globalen Umgebung den Typescript-Compiler. Dazu benutzen Sie folgendes Kommando:   
+   ```Shell
+   npm install -g typescript
+   ```
+   Wenn alles geklappt hat, gibt das folgende Kommando die Version des Typescript-Compilers aus - diese muß höher als 3.2 sein:  
+   ```Shell
+   tsc -v
+   ```
+7. Installieren Sie ebenso die Angular-CLI;
+   ```Shell
+   npm install -g @angular/cli
+   ```
+   Wenn alles geklappt hat, gibt das folgende Kommando die Version der Angular-CLI aus:  
+   ```Shell
+   ng version
+   ```
+
 
 # Installation auf Mac-OS
 
@@ -53,11 +70,28 @@ bei der [Python-Installation](../pythonsetup_de) verwendet.
    ```Shell
    npm --version
    ```
+4. Installieren Sie nun in Ihrer globalen Umgebung den Typescript-Compiler. Dazu benutzen Sie folgendes Kommando:   
+   ```Shell
+   npm install -g typescript
+   ```
+   Wenn alles geklappt hat, gibt das folgende Kommando die Version des Typescript-Compilers aus - diese muß höher als 3.2 sein:  
+   ```Shell
+   tsc -v
+   ```
+5. Installieren Sie ebenso die Angular-CLI;
+   ```Shell
+   npm install -g @angular/cli
+   ```
+   Wenn alles geklappt hat, gibt das folgende Kommando die Version der Angular-CLI aus:  
+   ```Shell
+   ng version
+   ```
 
 # Ergebnis
 
 Das Ergebnis der Arbeitsschritte ist eine node-Installation, die durch Sie für notwendige
-Administrationsarbeiten benutzt werden kann.
+Administrationsarbeiten benutzt werden kann. Ebenso stehen Ihnen die Angular-Umgebung und
+der Typescript-Compiler zur Verfügung.
 
 Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
 zur git-Installation.
