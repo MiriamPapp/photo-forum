@@ -18,6 +18,13 @@ to enter. It is not a social network and there is no intention to develop it int
 
 At the moment there is no usable functionality because the software is in a very early stage.
 
+## Feedback
+
+Use the github features or send your feedback via to photo.forum.project@gmail.com.
+
+Bitte senden Sie Rückmeldungen und Anmerkungen an die E-Mail-Adresse photo.forum.project@gmail.com oder
+benutzen Sie die Möglichkeiten, die GitHub bietet.
+
 ## Local github pages
 
 If you want to serve the github pages on your computer (for example to change and test them),
