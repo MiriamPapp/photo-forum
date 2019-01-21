@@ -6,7 +6,8 @@ subtitle: '2018-12-24'
 This page is also available [in English](../index).
 
 **Achtung**: Dieses Projekt ist noch in einem sehr frühen Entwicklungsstadium. Es gibt noch
- keine benutzbaren Funktionen.
+ keine benutzbaren Funktionen. Falls Sie Anmerkungen oder Korrekturen haben, können Sie diese an
+ die E-Mail-Adresse [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com) schicken.
 
 # Überblick
 
@@ -22,7 +23,7 @@ heißt, es ist kein spezieller Server dafür bereitzustellen. Auf diese Weise be
 Forumbetreiber nur anhand des aktuellen Ressourcenverbrauchs, wobei viele der benutzten
 Dienste Freikontingente haben, die die Benutzung noch preiswerter machen.
 
-**Bitte** befolgen Sie die Installationsanweisungen exakt! Lassen Sie keine Punkte aus, machen
+**Bitte** befolgen Sie die Installationsanweisungen **exakt**! Lassen Sie keine Punkte aus, machen
 Sie nichts anders - falls doch, wird das eventuell eine frustrierende Erfahrung und es erzeugt
 unnötigen Support-Aufwand.
 

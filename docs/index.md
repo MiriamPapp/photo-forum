@@ -4,7 +4,8 @@ subtitle: 'posted: 2018-12-24'
 ---
 Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
 
-**Attention**: This is work in progress and in a very early stage. There is nothing usable yet.
+**Attention**: This is work in progress and in a very early stage. There is nothing usable yet. If
+you want to provide feedback, send it to [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com).
 
 # Introduction
 
@@ -24,7 +25,7 @@ how to set up all the needed stuff. The users of the forum will need their Inter
 only - they don't have to set anything up. The following first requirement is only needed
 for the person hosting a Photo-Forum. The users will use their usual device (PC, tablet, smartphone).
 
-**Please** follow the installation steps to the point - don't omit things, don't do them differently.
+**Please** follow the installation steps **to the point** - don't omit things, don't do them differently.
 This will only create frustration and support overhead.
 
 1. **Computer**  
