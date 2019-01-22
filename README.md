@@ -40,8 +40,6 @@ bundle exec jekyll serve
 ## Angular application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
-It is not required that you have @angular/cli installed globally - it is part of the development
-dependencies of this project.
 
 ### Development server
 
