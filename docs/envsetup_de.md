@@ -13,6 +13,33 @@ Installationsschritte eine gesetzte Umgebungsvariable mit dem Namen `PHOTOFORUM`
 voraussetzen. Der Wert dieser Variablen ist der Verzeichnisname unter dem alle 
 Programmkomponenten installiert werden.
 
+# Hinweis zur Eingabe von Kommandos
+
+Die hier verwendeten Kommandos sind teilweise recht schwierig abzuschreiben und die
+Gefahr, dabei Fehler zu machen ist groß. Deswegen sollten Sie die Zwischenablage Ihres Rechners
+benutzen, indem sie die Kommandos kopieren und einfügen.
+
+Dabei markieren Sie das Kommando mit der Maus, indem Sie am Anfang des Kommandos
+mit der linken Maustaste klicken, diese festhalten und dann die Maus bis zum Ende des
+Kommandos ziehen. Dort können Sie die Taste wieder loslassen.   
+Das Ergebnis ist, daß das Kommando in Ihrem Browser-Fenster `markiert` ist.
+
+Nun kopieren Sie den Text. Dazu drücken Sie auf Windows-Rechnern die Tastenkombination
+Strg-C und auf Macintosh-Rechnern die Kombination Command-C. Alternativ können Sie auch
+mit der rechten Maustaste auf den markierten Text klicken und dann aus dem Kontextmenü
+den Befehl "Kopieren" auswählen (wiederum mit der linken Maustaste).    
+Nun haben Sie das Kommando in der Zwischenablage gespeichert.
+
+Aktivieren Sie jetzt das Eingabefenster für die Kommandos. Dann drücken Sie auf
+Windows-Rechnern die Tastenkombination Strg-V - auf dem Mac die Kombination Command-V.
+Alternativ können Sie auch hier die rechte Maustaste benutzen und aus dem Kontextmenü
+den Befehl "Einfügen" auswählen.   
+Nun haben Sie das Kommando eingefügt und können es mit der Enter-Taste bestätigen.
+
+**Achtung:** Falls sich das Kommando im Browser über mehrere Zeilen erstreckt, müssen
+Sie das Kopieren/Einfügen eventuell in mehreren Teilen ausführen - das Kopieren von
+Zeilenwechseln kann zu unerwünschten Ergebnissen führen.
+
 # Einrichtung in Microsoft Windows
 
 1. Öffnen Sie das Programm "Eingabeaufforderung".  Auf Windows 7 klicken Sie dazu auf den
