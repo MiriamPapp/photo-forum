@@ -11,6 +11,31 @@ The whole installation will be done in your _home directory_ and all the steps d
 on setting up an environment variable called `PHOTOFORUM`. The value of this variable
 is the top level directory of your installation.
 
+# Hint for entering commands
+
+The commands which are used here are partly complicated and long - both possible reasons
+for errors during writing the commands. Therefore you should use your clipboard and
+Cut&Paste.
+
+To copy a command mark it in your browser window by pressing locationc the mouse pointer
+left of the first character of the command, pressing your left mouse button and dragging
+the mouse (while holding the left mouse button) to the end of the command. Your
+command is then `marked`.
+
+Now copy the command by using the key combination Ctrl-C on your keyboard on Windows
+systems or Command-C on Macintosh systems.   
+Alternatively you can right-click on the selected text and use the "Copy" command from
+the context menu.   
+Now you copied the command to the clipboard.
+
+Click on the window where you want to enter the command. To paste the command use
+the key combination Ctrl-V on Windows or Command-V on Macintosh systems. You can
+also right click into the window and use the "Paste" command from the context menu.
+
+If the command is so long that it uses more than one line in the browser window you
+may have to use the Cut/Paste procedure multiple times. Copying line breaks may
+create undesired behaviour.
+
 # Setup on MS Windows
 
 1. Open a shell window (called command line on windows). On Windows 7 click on the
