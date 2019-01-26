@@ -6,7 +6,10 @@ subtitle: '2018-12-24'
 This page is also available [in English](../index).
 
 **Achtung**: Dieses Projekt ist noch in einem sehr frühen Entwicklungsstadium. Es gibt noch
- keine benutzbaren Funktionen. Falls Sie Anmerkungen oder Korrekturen haben, können Sie diese an
+ keine benutzbaren Funktionen.   
+ Falls Sie helfen wollen: Im Moment können Sie die Installationsanleitungen hier auf der Webseite
+ testen.   
+Falls Sie dann Anmerkungen oder Korrekturen haben, können Sie diese an
  die E-Mail-Adresse [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com) schicken.
 
 # Überblick
