@@ -112,7 +112,7 @@ Zeilenwechseln kann zu unerwünschten Ergebnissen führen.
    Umgebung ab, wie Sie ein Terminal-Programm starten können. Bitte lassen Sie es sich im Notfall
    von jemandem zeigen.
    
-2. Auf Mac-OS  sollte der gestartete KOmmando-Interpreter die `Bourne again shell`(bash) sein.
+2. Auf Mac-OS  sollte der gestartete Kommando-Interpreter die `Bourne again shell`(bash) sein.
    Auf Linux ist das meistens auch der Fall. Sollten Sie einen anderen KOmmandointerpreter benutzen,
    müssen Sie alle Installationsschritte dementsprechend anpassen.   
    Um zu prüfen, ob Sie die bash ausführen, geben Sie bitte das folgende Kommando ein:  

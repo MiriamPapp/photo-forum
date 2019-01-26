@@ -32,7 +32,9 @@ unnötigen Support-Aufwand.
 Wenn Sie ein Photo-Forum betreiben wollen, müssen Sie einige Voraussetzungen erfüllen. Für alle
 notwendigen Arbeitsschritte gibt es hier eine Beschreibung.  
 Die Benutzer eines Photo-Forums müssen nichts installieren - sie benutzen für den Zugriff
-einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).
+einfach ihren Internet-Browser auf ihrem Endgerät (PC, Tablet, SmartPhone).  
+Sollten Sie die hier installierten Komponenten wieder loswerden wollen, befolgen Sie
+die Anweisungen zur [Deinstallation](../uninstall).
 
 1. **Rechner**  
   Das ist ernst gemeint - Sie brauchen einen Rechner. Ein Tablet oder Smartphone reicht

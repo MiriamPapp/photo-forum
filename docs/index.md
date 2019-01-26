@@ -26,7 +26,9 @@ only - they don't have to set anything up. The following first requirement is on
 for the person hosting a Photo-Forum. The users will use their usual device (PC, tablet, smartphone).
 
 **Please** follow the installation steps **to the point** - don't omit things, don't do them differently.
-This will only create frustration and support overhead.
+This will only create frustration and support overhead.   
+In case you want to get rid of the prerequisites you can follow the
+[uninstall](./uninstall) instructions.
 
 1. **Computer**  
   This is a real requirement. You need a computer. A tablet or smartphone will not be enough.

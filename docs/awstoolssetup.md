@@ -21,7 +21,7 @@ on its website.
    to do it). Enter the following command:   
 
    ```Shell
-   pip install awscli --upgrade
+   pip3 install awscli --upgrade
    ```
    This installs the `aws` command. It is installed globally in your new Python installation.
 2. Enter the following command:   
