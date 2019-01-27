@@ -22,9 +22,20 @@ var listparams = {
       'UPDATE_ROLLBACK_COMPLETE', 'REVIEW_IN_PROGRESS',
     ]
 };
+
+var stacks;
 cloudformation.listStacks(listparams, function(err, data) {
-    if (err) console.log(err, err.stack); // an error occurred
-    else     console.log(data);           // successful response
+    if (err) {
+        console.log(err, err.stack); // an error occurred
+        process.exit(1);
+    }
+    else {
+        stacks = data.StackSummaries;
+    }
+});
+
+stacks.forEach(element => {
+    console.log('Stack' + element.StackName + ': ' + element.StackStatus);
 });
 
 /*
