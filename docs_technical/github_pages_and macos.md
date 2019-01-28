@@ -1,7 +1,7 @@
 ## Local Jekyll for testting before pushing content
 
-The Ruby instalation on OS/X Mojave seems not be suitable for installing
-Jekyll. It heps to do the following steps which install a new ruby version
+The Ruby installation on OS/X Mojave seems not be suitable for installing
+Jekyll. It helps to do the following steps which install a new ruby version
 and make it the default.
 
 Link https://github.com/jekyll/jekyll/issues/7274#issuecomment-425069689

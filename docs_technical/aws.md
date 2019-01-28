@@ -5,14 +5,11 @@ To keep the costs low the infrastructure is kept to a bare minimum.
 
 The following services are used: 
 
-* Cognito   
-  Using the service through AWS accounts would be much more difficult and would
-  make creation of users through invitations nearly impractical. The target
-  users are photographers, not programmers. Hopefully Cognito provides
-  a good user experience (to be explored).
-  The alternative (using AWS accounts) would require more complex policies
-  and cut out many users because of the necessary technical skills. But it
-  would also provide the possibility to distribute the costs through the users.
+* IAM   
+  It was first planned to use Cognito to manage users. Cognito adds
+  complexity to the setup, so this idea was abandoned.
+  Self service is not necessary for users - the project is targeting closed
+  groups where it is acceptable for the owner to add users through IAM.
 * S3  
   The heart of the application. S3 is a cheap storage which provides interesting
   features.   
