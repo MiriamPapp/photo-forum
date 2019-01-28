@@ -1,0 +1,14 @@
+{
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "Deployment to AWS",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Tegtmeyer",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}
