@@ -21,7 +21,6 @@
     "@angular/platform-browser-dynamic": "^7.2.2",
     "@angular/router": "^7.2.2",
     "@types/jasmine": "^3.3.7",
-    "amazon-cognito-identity-js": "^3.0.7",
     "aws-sdk": "^2.391.0",
     "bootstrap": "^4.2.1",
     "core-js": "^2.6.2",
