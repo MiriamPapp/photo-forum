@@ -2,7 +2,27 @@
   "rulesDirectory": [
     "codelyzer"
   ],
+  "extends": [
+    "tslint-etc",
+    "rxjs-tslint-rules"
+  ],
   "rules": {
+    "rxjs-no-internal": {
+      "severity": "error"
+    },
+    "rxjs-finnish": {
+      "severity": "error"
+    },
+    "rxjs-no-subject-value": {
+      "severity": "error"
+    },
+    "rxjs-no-unsafe-switchmap": {
+      "severity": "error"
+    },
+    "rxjs-throw-error": {
+      "severity": "error"
+    },
+    "no-unused-declaration": true,
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
@@ -31,7 +51,7 @@
       true,
       140
     ],
-    "member-access": false,
+    "member-access": true,
     "member-ordering": [
       true,
       {
