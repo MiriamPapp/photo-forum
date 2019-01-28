@@ -55,7 +55,7 @@ Only administrators (or Lambda functions on AWS) are allowed to replace/change
 documents.
 
 Clients (the web application running in the browser) get the documents they are
-interested in through the query mechanism. They can also fetch linked but
+interested in by selecting through names(?). They can also fetch linked but
 missing documents (or ignore the linking documents).
 To enable deletions of posts/comments a special document will be posted which
 flags the deletion of another document. A periodically running Lambda function
