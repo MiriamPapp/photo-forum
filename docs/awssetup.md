@@ -12,7 +12,8 @@ average computer knowledge. That's why it doesn't make use of more advanced
 cross-account access are not used.   
 This also means that you should **NOT** use the here created AWS account for
 any other activities on AWS. If you need an additional account create one with
-a different e-mail address!
+a different e-mail address!  
+If you already own an AWS account please create a new one for Photo-forum.
 
 First go to the [AWS homepage](https://aws.amazon.com/free/). If you never
 created an accout at AWS it looks like this:
@@ -34,7 +35,8 @@ costs and the software has a low footprint regarding costs.
 Usually you have to pay nothing within the first year and after that the costs
 are very low.
 
-If you created your root account you can login and logout to/from AWS within the AWS console.
+If you created your root account you can login and logout to/from AWS within the AWS console.   
+Please ensure that you keep your login credentials safe and accessible!
 
 # IAM users
 
@@ -52,4 +54,4 @@ in the AWS documentation.
 
 # Create your administrative IAM user
 
-Please no
+Please note ...
