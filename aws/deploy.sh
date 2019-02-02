@@ -10,5 +10,5 @@
 tsc
 
 # run the script
-node deploy.js
+aws-vault exec forumdev -- node deploy.js
 
