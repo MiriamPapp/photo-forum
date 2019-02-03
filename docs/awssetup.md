@@ -13,7 +13,10 @@ cross-account access are not used.
 This also means that you should **NOT** use the here created AWS account for
 any other activities on AWS. If you need an additional account create one with
 a different e-mail address!  
-If you already own an AWS account please create a new one for Photo-forum.
+If you already own an AWS account please create a new one for Photo-forum.   
+If you use multiple accounts you can simplify the handling by using different
+browsers for the different accounts - for example Firefox for one acocunt and
+Chrome for the other.
 
 First go to the [AWS homepage](https://aws.amazon.com/free/). If you never
 created an accout at AWS it looks like this:
