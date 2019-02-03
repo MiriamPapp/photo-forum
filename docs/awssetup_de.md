@@ -28,6 +28,10 @@ Aber wie schon gesagt, ist der Prozess recht einfach und selbsterklärend.
 Die Einrichtung eines Kontos ist auch
 [direkt über diese Seite](https://portal.aws.amazon.com/billing/signup#/start) möglich.
 
+Bei der Eingabe Ihrer Telefonnummer achten Sie bitte darauf die Nummer **ohne** die führende Null einzugeben.
+Sie stellen das Land ein, wodurch automatisch die Länderkennung +49 eingestellt wird und dann
+die Telefonnumer mit Vorwahl - ohne die erste Null.
+
 AWS verlangt während der Konto-Einrichtung die Angabe eines Zahlungsmittels. Lassen Sie sich
 davon nicht abschrecken - Sie können bei AWS Limits setzen und Alarme für die Kosten
 einrichten und das Photo-Forum wird sehr wenig Kosten produzieren.  
