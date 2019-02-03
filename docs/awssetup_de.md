@@ -13,7 +13,12 @@ Das heißt auch, daß Sie das hier eingerichtete Konto **NICHT** für andere
 Zwecke benutzen sollten. Falls Sie weitere AWS-Dienste einsetzen wollen,
 richten Sie bitte mit einer weiteren E-Mail-Adresse ein neues AWS-Konto ein.   
 Falls Sie schon ein AWS-Konto besitzen, richten Sie bitte für das Photo-Forum
-ein neues Konto ein.
+ein neues Konto ein.  
+Falls Sie zwei Konten benutzen, verwenden Sie am besten auch zwei verschiedene Browser,
+zum Beispiel einmal Firefox und einmal Chrome. Das vereinfacht die Handhabung, da sich
+AWS über Cookies und andere Browserdaten merkt, welches Konto Sie gerade benutzen. Da
+kann es schwierig werden, überhaupt die Seite zum Eröffnen eines weiteren Kontos
+öffnen zu können.
 
 Öffnen Sie zunächst die [AWS Startseite](https://aws.amazon.com/de/free/). Falls Sie nie
 ein AWS-Konto angelegt haben, sieht die Seite etwa so aus:
