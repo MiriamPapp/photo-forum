@@ -9,8 +9,9 @@ This page is also available [in English](../index).
  keine benutzbaren Funktionen.   
  Falls Sie helfen wollen: Im Moment können Sie die Installationsanleitungen hier auf der Webseite
  testen.   
-Falls Sie dann Anmerkungen oder Korrekturen haben, können Sie diese an
+ Falls Sie dann Anmerkungen oder Korrekturen haben, können Sie diese an
  die E-Mail-Adresse [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com) schicken.
+ Es gibt auch ein [Support-Forum bei YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support).
 
 # Überblick
 

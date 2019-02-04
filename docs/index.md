@@ -6,7 +6,7 @@ Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
 
 **Attention**: This is work in progress and in a very early stage. There is nothing usable yet.   
 If you want to help you can test this documentation at the moment.   
-In case you want to provide feedback, send it to [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com).
+In case you want to provide feedback, send it to [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com). There is also a [support forum at YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support).
 
 # Introduction
 
