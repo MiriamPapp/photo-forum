@@ -64,4 +64,11 @@ in der AWS Dokumentation an.
 
 # IAM: Anlegen des Administrators
 
-Please note ...
+In der AWS Management Konsole (die Seite, die Sie nach dem Anmelden sehen) wählen Sie
+"Services" in der linken oberen Ecke. Dort wählen Sie dann den IAM Dienst aus.  
+Um ihn zu finden, können Sie auch die Suchfunktion am oberen Rand der Dienst-Übersicht
+benutzen.
+
+Sie sehen dann eine Seite, die so ähnlich wie diese aussieht:  
+
+![IAM Übersicht](../img/IAM_de.jpg)

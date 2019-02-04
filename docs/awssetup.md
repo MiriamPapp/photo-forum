@@ -57,4 +57,9 @@ in the AWS documentation.
 
 # Create your administrative IAM user
 
-Please note ...
+In the AWS management console (the thing you see after logging in) select "Services" at the upper left
+corner and choose the IAM service. You can use the search field at the top of the services overview.
+
+You will see a page similar to this one:
+
+![IAM dashboard](../img/IAM.jpg)
