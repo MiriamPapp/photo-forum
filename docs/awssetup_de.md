@@ -72,3 +72,27 @@ benutzen.
 Sie sehen dann eine Seite, die so ähnlich wie diese aussieht:  
 
 ![IAM Übersicht](../img/IAM_de.jpg)
+
+Um mit den Knotwendigen Werkzeugen arbeiten zu können, benötigen Sie Zugangsdaten, die
+von Programmen benutzt werden können. Bei AWS gibt es dafür die sogenannten Zugriffsschlüssel.
+Diese Schlüssel tragen Sie auf Ihrem Computer ein und haben dadurch sehr einfach Zugriff auf Ihr
+AWS-Konto.  
+Die Verwaltung dieser Schlüssel erledigt das Programm aws-vault, das wir schon installiert
+haben.
+
+Bitte öffnen Sie wieder ein Terminal-Fenster (Mac) bzw. ein Fenster für die
+Eingabeaufforderung. Geben Sie das folgende Kommando ein:
+   ```Shell
+   aws-vault add forumadmin
+   ```
+Das Programm fragt nun nach dem Zugriffsschlüssel (`Enter Access Key ID: `).  
+In der IAM-Konsole bei AWS gehen Sie rechts oben auf den Namen Ihres Kontos - bei mir ist
+das `Photoforum Root` - das Feld befindet sich rechts neben dem Glockensymbol.  
+Klicken Sie auf den Namen und wählen Sie "Meine Anmeldeinformationen" - eventuell heißt das etwas
+anders. Ich kann das bei mir leider nicht auf Deutsch umstellen, auch wenn der Rest der Seite
+deutsch angezeigt wird. Falls auch bei Ihnen das Menü in Englisch angezeigt wird: der
+richtige Eintrag ist `My Security Credentials`.
+
+Auf der nun angezeigten Seite wählen Sie "Zugriffsschlüssel (Zugriffsschlüssel-ID und geheimer Zugriffsschlüssel)".
+
+![access keys](../img/accesskeys_de.jpg)
