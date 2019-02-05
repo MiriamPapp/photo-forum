@@ -40,9 +40,32 @@ Resources:
                 - !Ref WebhostingBucket
                 - /*
       Bucket: !Ref WebhostingBucket
-  # Example for creating a Cognito User pool:
-  #  https://gist.github.com/singledigit/2c4d7232fa96d9e98a3de89cf6ebe7a5
-
+  ForumAdminsGroup:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: !Join [ "-",  !Ref ForumAdminsGroup, !Ref AWS::Region ]
+      Policies:
+        - PolicyName: "S3AdminAccess"
+          PolicyDocument:
+            Id: ContentsS3BucketPolicy
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: 's3:ListBucket'
+                Resource: !Join 
+                  - ''
+                  - - 'arn:aws:s3:::'
+                    - !Ref ContentsBucket
+              - Effect: Allow
+                Action:
+                  - s3:PutObject
+                  - s3:GetObject
+                  - s3:DeleteObject
+                Resource: !Join 
+                  - ''
+                  - - 'arn:aws:s3:::'
+                    - !Ref ContentsBucket
+                    - /*
 
 Outputs:
   WebsiteURL:
