@@ -55,7 +55,7 @@ have a look at the
 [IAM best practices document](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 in the AWS documentation.
 
-# Create your administrative IAM user
+# IAM: create your administrative IAM user
 
 In the AWS management console (the thing you see after logging in) select "Services" at the upper left
 corner and choose the IAM service. You can use the search field at the top of the services overview.
@@ -63,3 +63,25 @@ corner and choose the IAM service. You can use the search field at the top of th
 You will see a page similar to this one:
 
 ![IAM dashboard](../img/IAM.jpg)
+
+To be able to work with the necessary tools you need credentials for programs. AWS provides
+access keys for this purpose.  
+You save the keys on your computer and have then very easily access to your AWS account.  
+For the management of these keys we will use the program aws-vault which you already installed
+in the previous steps.
+
+Please open a terminal window again (or the Windows shell on Windows). Enter the following
+command (and do not enter anythin afterwards):
+```Shell
+aws-vault add forumadmin
+```
+The program now asks for your accesskey id. We have to generate it first in the AWS console.
+
+In the AWS console look for your account name in the upper right corner (adjacent to the
+bell symbol) - in my images this is `PhotoForum Root`.
+
+Click on the name and select `My Security Credentials`.   
+
+At the page now displayed select `Access keys (access key ID and secret access key)`.
+
+![access keys](../img/accesskeys.jpg)

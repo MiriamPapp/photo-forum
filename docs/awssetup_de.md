@@ -62,7 +62,7 @@ das Dokument
 [Bewährte Methoden für IAM](https://docs.aws.amazon.com/de_de/IAM/latest/UserGuide/best-practices.html)
 in der AWS Dokumentation an.
 
-# IAM: Anlegen des Administrators
+# IAM: Anlegen des IAM-Administrators
 
 In der AWS Management Konsole (die Seite, die Sie nach dem Anmelden sehen) wählen Sie
 "Services" in der linken oberen Ecke. Dort wählen Sie dann den IAM Dienst aus.  
@@ -73,7 +73,7 @@ Sie sehen dann eine Seite, die so ähnlich wie diese aussieht:
 
 ![IAM Übersicht](../img/IAM_de.jpg)
 
-Um mit den Knotwendigen Werkzeugen arbeiten zu können, benötigen Sie Zugangsdaten, die
+Um mit den notwendigen Werkzeugen arbeiten zu können, benötigen Sie Zugangsdaten, die
 von Programmen benutzt werden können. Bei AWS gibt es dafür die sogenannten Zugriffsschlüssel.
 Diese Schlüssel tragen Sie auf Ihrem Computer ein und haben dadurch sehr einfach Zugriff auf Ihr
 AWS-Konto.  
@@ -85,7 +85,8 @@ Eingabeaufforderung. Geben Sie das folgende Kommando ein:
    ```Shell
    aws-vault add forumadmin
    ```
-Das Programm fragt nun nach dem Zugriffsschlüssel (`Enter Access Key ID: `).  
+Das Programm fragt nun nach dem Zugriffsschlüssel (`Enter Access Key ID: `). Diesen müssen wir uns erst bei AWS generieren.
+
 In der IAM-Konsole bei AWS gehen Sie rechts oben auf den Namen Ihres Kontos - bei mir ist
 das `Photoforum Root` - das Feld befindet sich rechts neben dem Glockensymbol.  
 Klicken Sie auf den Namen und wählen Sie "Meine Anmeldeinformationen" - eventuell heißt das etwas
