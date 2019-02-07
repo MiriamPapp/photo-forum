@@ -85,3 +85,35 @@ Click on the name and select `My Security Credentials`.
 At the page now displayed select `Access keys (access key ID and secret access key)`.
 
 ![access keys](../img/accesskeys.jpg)
+
+Now click on the blue button named `Create New Access Key`. The access key and secret key are
+automatically created and the following window is displayed in the browser:
+
+![access keys](../img/keycreated.jpg)
+
+Please click on `Download Key File` and open the downloaded file with your favorite text
+editor (possibly Excel is opened on Windows because the file is named rootkey.csv).  
+The file contents look similar to this (of course the Id and Key are different from the following):
+
+![access keys](../img/keys.jpg)
+
+**Important**: These keys are the entry to your AWS account! So you don't have to show them
+anybody else and you must store them securely. And here comes aws-vault into play. You have still
+your window open where (terminal/Windows shell) where aws-vault asks for you access key Id.   
+Please copy the Id (it's in the first line of your CSV file) and paste it into the aws-vault
+program. Then press enter in this window.   
+aws-vault now asks for the secret access key with `Enter Secret Access Key:`.   
+Again copy the secret key from your CSV file to your aws-vault program and press enter.
+
+aws-vault asks for a password which secures your aws-vault - either use your
+user password on Mac or choose one on Windows.
+
+![access keys](../img/vault-password.jpg)
+
+Don't forget the password - if you
+do, you have to create new access keys on AWS.  After entering the password your access keys
+are stored in aws-vault - the program acknowledges this with
+`Added credentials to profile "forumadmin" in vault`.
+
+**Congratulations!** Now you are able to use programs to do things in AWS.
+
