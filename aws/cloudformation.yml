@@ -53,6 +53,9 @@ Resources:
       ManagedPolicyArns:
         - !Ref PolicyShowAllBucketsOnConsole
         - !Ref PolicyListObjectsInBucketRoot
+        - !Ref PolicyListObjectsInConfig
+        - !Ref PolicyListFoldersInOpenChannels
+        - !Ref PolicyListObjectsInOpenChannels
 
   PolicyShowAllBucketsOnConsole:
     Type: AWS::IAM::ManagedPolicy
@@ -86,6 +89,59 @@ Resources:
               StringEquals:
                 s3:prefix: ""
                 s3:delimiter: "/"
+
+  PolicyListObjectsInConfig:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow browsing the config directory
+    Properties:
+      ManagedPolicyName: ListObjectsInConfig
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringEquals:
+                s3:prefix: "config/"
+                s3:delimiter: "/"
+
+  PolicyListFoldersInOpenChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow browsing of open channels
+    Properties:
+      ManagedPolicyName: ListFoldersInOpenChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringEquals:
+                s3:prefix: "open/*"
+                s3:delimiter: "/"
+
+  PolicyListObjectsInOpenChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow browsing of objects in open channels
+    Properties:
+      ManagedPolicyName: ListObjectsInOpenChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListObjects
+            Resource: !Join
+              - ""
+              - - !GetAtt ContentsBucket.Arn
+                - "/open/*"
 
 
 Outputs:
