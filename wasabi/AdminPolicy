@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListFoldersForClosedChannels",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::ftegtmeyer-testbucket",
+      "Condition": {
+        "StringLike": {
+          "s3:delimiter": "/",
+          "s3:prefix": "closed/*"
+        }
+      }
+    },
+    {
+      "Sid": "ObjectWritesInClosedUserFolders",
+      "Effect": "Allow",
+      "Action": "s3:*Object",
+      "Resource": "arn:aws:s3:::ftegtmeyer-testbucket/closed/*/${aws:username}/*"
+    }
+  ]
+}
