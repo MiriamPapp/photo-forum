@@ -40,40 +40,56 @@ Resources:
                 - !Ref WebhostingBucket
                 - /*
       Bucket: !Ref WebhostingBucket
+
+
   ForumAdminsGroup:
     Type: AWS::IAM::Group
+    Description: Forum-Admins (Moderators)
+    Properties:   
+      GroupName: !Join
+        - "-"
+        - - "ForumAdmins"
+          - !Ref AWS::Region
+      ManagedPolicyArns:
+        - !Ref PolicyShowAllBucketsOnConsole
+        - !Ref PolicyListObjectsInBucketRoot
+
+  PolicyShowAllBucketsOnConsole:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow users to see all buckets in the AWS console
     Properties:
-      GroupName: !Join [ "-",  !Ref ForumAdminsGroup, !Ref AWS::Region ]
-      Policies:
-        - PolicyName: "S3AdminAccess"
-          PolicyDocument:
-            Id: ContentsS3BucketPolicy
-            Version: 2012-10-17
-            Statement:
-              - Effect: Allow
-                Action: 's3:ListBucket'
-                Resource: !Join 
-                  - ''
-                  - - 'arn:aws:s3:::'
-                    - !Ref ContentsBucket
-              - Effect: Allow
-                Action:
-                  - s3:PutObject
-                  - s3:GetObject
-                  - s3:DeleteObject
-                Resource: !Join 
-                  - ''
-                  - - 'arn:aws:s3:::'
-                    - !Ref ContentsBucket
-                    - /*
+      ManagedPolicyName: ShowAllBucketsOnConsole
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:GetBucketLocation
+              - s3:ListAllMyBuckets
+            Resource: "*"
+
+  PolicyListObjectsInBucketRoot:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow users to see the top bucket content in the AWS console
+    Properties:
+      ManagedPolicyName: ListObjectsInBucketRoot
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringEquals:
+                s3:prefix: ""
+                s3:delimiter: "/"
+
 
 Outputs:
-  WebsiteURL:
-    Value: !GetAtt 
-      - WebhostingBucket
-      - WebsiteURL
-    Description: URL for website hosted on S3
-  WebBucketSecureURL:
+  WebURL:
     Value: !Join 
       - ''
       - - 'https://'
@@ -81,5 +97,3 @@ Outputs:
           - WebhostingBucket
           - DomainName
     Description: URL of S3 bucket to hold website content
-  WebBucketName:
-      Value: !Ref WebhostingBucket
