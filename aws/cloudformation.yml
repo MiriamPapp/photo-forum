@@ -244,3 +244,12 @@ Outputs:
           - WebhostingBucket
           - DomainName
     Description: URL of S3 bucket to hold website content
+  WebBucketName:
+    Value: !Ref WebhostingBucket
+  WebBucketArn:
+    Value: !GetAtt WebhostingBucket.Arn
+  ContentsBucketName:
+    Value: !Ref ContentsBucket
+  ContentsBucketArn:
+    Value: !GetAtt ContentsBucket.Arn
+  
