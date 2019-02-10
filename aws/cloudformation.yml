@@ -42,6 +42,22 @@ Resources:
       Bucket: !Ref WebhostingBucket
 
 
+  ForumUsersGroup:
+    Type: AWS::IAM::Group
+    Description: Forum-Users
+    Properties:   
+      GroupName: !Join
+        - "-"
+        - - "ForumUsers"
+          - !Ref AWS::Region
+      ManagedPolicyArns:
+        - !Ref PolicyShowAllBucketsOnConsole
+        - !Ref PolicyListObjectsInBucketRoot
+        - !Ref PolicyListObjectsInConfig
+        - !Ref PolicyListFoldersInOpenChannels
+        - !Ref PolicyListObjectsInOpenChannels
+        - !Ref PolicyObjectCreationInOpenChannels
+
   ForumAdminsGroup:
     Type: AWS::IAM::Group
     Description: Forum-Admins (Moderators)
@@ -56,6 +72,10 @@ Resources:
         - !Ref PolicyListObjectsInConfig
         - !Ref PolicyListFoldersInOpenChannels
         - !Ref PolicyListObjectsInOpenChannels
+        - !Ref PolicyObjectCreationInOpenChannels
+        - !Ref PolicyListFoldersInClosedChannels
+        - !Ref PolicyListObjectsInClosedChannels
+        - !Ref PolicyObjectCreationInClosedChannels
 
   PolicyShowAllBucketsOnConsole:
     Type: AWS::IAM::ManagedPolicy
@@ -142,6 +162,77 @@ Resources:
               - ""
               - - !GetAtt ContentsBucket.Arn
                 - "/open/*"
+
+  PolicyObjectCreationInOpenChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow creation of objects in open channels
+    Properties:
+      ManagedPolicyName: ObjectCreationInOpenChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:*Object
+              - tag:*
+            Resource: !Join
+              - ""
+              - - !GetAtt ContentsBucket.Arn
+                - "/open/*/${aws:username}"
+
+  PolicyListFoldersInClosedChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow browsing of closed channels
+    Properties:
+      ManagedPolicyName: ListFoldersInClosedChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringEquals:
+                s3:prefix: "closed/*"
+                s3:delimiter: "/"
+
+  PolicyListObjectsInClosedChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow browsing of objects in closed channels
+    Properties:
+      ManagedPolicyName: ListObjectsInClosedChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:ListObjects
+            Resource: !Join
+              - ""
+              - - !GetAtt ContentsBucket.Arn
+                - "/closed/*"
+
+  PolicyObjectCreationInClosedChannels:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Allow creation of objects in closed channels
+    Properties:
+      ManagedPolicyName: ObjectCreationInClosedChannels
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:*Object
+              - tag:*
+            Resource: !Join
+              - ""
+              - - !GetAtt ContentsBucket.Arn
+                - "/closed/*/${aws:username}"
 
 
 Outputs:
