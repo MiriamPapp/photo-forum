@@ -6,8 +6,6 @@ title: Uninstall components
 
 # Macintosh
 
-* **aws-vault**  
-  `brew cask uninstall aws-vault`
 * **awscli**  
   `pip3 uninstall awscli`
 * **git**  

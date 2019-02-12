@@ -33,22 +33,6 @@ auf seiner Webseite.
    ```
    Dabei darf keine Fehlermeldung auftauchen und es muß die Versionsnummer des
    aws-Programms ausgegeben werden.   
-3. Laden Sie das Programm `aws-vault-windows-386.exe` von der aws-vault
-   [Download-Seite](https://github.com/99designs/aws-vault/releases) herunter. Speichern Sie
-   das Programm in Ihrem Downloads-Ordner.
-4. In Ihrem immer noch geöffneten Programm _Eingabeaufforderung_ (das schwarze Fenster) geben Sie nun
-   das folgende Kommando ein (alles eine Zeile!):  
-
-   ```Shell
-   copy %USERPROFILE%\Downloads\aws-vault-windows-386.exe %PHOTOFORUM%\py\Scripts\aws-vault.exe
-   ```
-5. Zum Testen benutzen Sie das folgende Kommando:   
- 
-   ```Shell
-   aws-vault --version
-   ```
-   Dabei darf keine Fehlermeldung auftauchen und es muß die Versionsnummer des
-   aws-vault-Programms ausgegeben werden.   
 
 
 # Installation auf Mac-OS
@@ -65,18 +49,6 @@ auf seiner Webseite.
    ```
    wird zur Prüfung der Installation benutzt. Es darf keinen Fehler erzeugen und muß
    die Versionsnummer Ihres aws-Kommandos ausgeben.
-3. Geben Sie nun ein weiteres Kommando ein und starten Sie es mit der Enter-Taste:   
-
-   ```Shell
-   brew cask install aws-vault
-   ```
-   Zur Erfolgskontrolle benutzen Sie das folgende Kommando:   
- 
-   ```Shell
-   aws-vault --version
-   ```
-   Auch dieses Kommando darf keinen Fehler erzeugen und muß
-   die Versionsnummer Ihres aws-vault-Kommandos ausgeben.
    
 # Ergebnis
 

@@ -67,13 +67,11 @@ You will see a page similar to this one:
 To be able to work with the necessary tools you need credentials for programs. AWS provides
 access keys for this purpose.  
 You save the keys on your computer and have then very easily access to your AWS account.  
-For the management of these keys we will use the program aws-vault which you already installed
-in the previous steps.
 
 Please open a terminal window again (or the Windows shell on Windows). Enter the following
 command (and do not enter anythin afterwards):
 ```Shell
-aws-vault add forumadmin
+aws configure --profile forumadmin
 ```
 The program now asks for your accesskey id. We have to generate it first in the AWS console.
 
@@ -98,22 +96,48 @@ The file contents look similar to this (of course the Id and Key are different f
 ![access keys](../img/keys.jpg)
 
 **Important**: These keys are the entry to your AWS account! So you don't have to show them
-anybody else and you must store them securely. And here comes aws-vault into play. You have still
-your window open where (terminal/Windows shell) where aws-vault asks for you access key Id.   
-Please copy the Id (it's in the first line of your CSV file) and paste it into the aws-vault
+anybody else and you must store them securely.
+The aws program stores the information inside your user directory in a subdirectory called
+`.aws`. The two created files are called `config`and `credentials`.    
+You have still
+your window open (terminal/Windows shell) where the aws command asks for you access key Id.   
+Please copy the Id (it's in the first line of your CSV file) and paste it into the aws
 program. Then press enter in this window.   
-aws-vault now asks for the secret access key with `Enter Secret Access Key:`.   
-Again copy the secret key from your CSV file to your aws-vault program and press enter.
+aws now asks for the secret access key with `Enter Secret Access Key:`.   
+Again copy the secret key from your CSV file to your aws program and press enter.
 
-aws-vault asks for a password which secures your aws-vault - either use your
-user password on Mac or choose one on Windows.
+The program now asks for your default region where you want to access the AWS services.
+This highly depends on your needs - if you are in Europe either `eu-central-1` (Germany) or
+`eu-west-1` (Ireland) may be good choices. The most important factor for choosing a region
+should be the location of your forum members - the speed of their data access may depend on this.   
+Other factors of choosing a region may be privacy regulations, the law or even the price.
 
-![access keys](../img/vault-password.jpg)
+The regions have different prices - see
+[this page](https://aws.amazon.com/s3/pricing/?nc1=h_ls) for more information and look
+for the `S3 Standard Storage`, `Request pricing S3 Standard` and `Data Transfer pricing`
+information.    
+I couldn't find a simple region list for the `Amazon S3` service which we will use but
+to look up the region identifiers have
+a look at the [endpoint list](https://docs.aws.amazon.com/general/latest/gr/rande.html)
+and compare the region names with the ones from the prices page.
 
-Don't forget the password - if you
-do, you have to create new access keys on AWS.  After entering the password your access keys
-are stored in aws-vault - the program acknowledges this with
-`Added credentials to profile "forumadmin" in vault`.
+Now enter your region identifier into the aws program and press Enter.
 
 **Congratulations!** Now you are able to use programs to do things in AWS.
 
+To check the configured aws program issue the following command:
+```Shell
+aws iam get-user --profile forumadmin
+```
+
+This should print some cryptic information which may look like this:
+```
+{
+    "User": {
+        "UserId": "063516392340",
+        "Arn": "arn:aws:iam::063516392340:root",
+        "CreateDate": "2019-02-03T17:48:37Z",
+        "PasswordLastUsed": "2019-02-12T17:15:21Z"
+    }
+}
+```

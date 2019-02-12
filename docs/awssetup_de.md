@@ -76,14 +76,12 @@ Sie sehen dann eine Seite, die so ähnlich wie diese aussieht:
 Um mit den notwendigen Werkzeugen arbeiten zu können, benötigen Sie Zugangsdaten, die
 von Programmen benutzt werden können. Bei AWS gibt es dafür die sogenannten Zugriffsschlüssel.
 Diese Schlüssel tragen Sie auf Ihrem Computer ein und haben dadurch sehr einfach Zugriff auf Ihr
-AWS-Konto.  
-Die Verwaltung dieser Schlüssel erledigt das Programm aws-vault, das wir schon installiert
-haben.
+AWS-Konto.
 
 Bitte öffnen Sie wieder ein Terminal-Fenster (Mac) bzw. ein Fenster für die
 Eingabeaufforderung. Geben Sie das folgende Kommando ein:
    ```Shell
-   aws-vault add forumadmin
+   aws configure --profile forumadmin
    ```
 Das Programm fragt nun nach dem Zugriffsschlüssel (`Enter Access Key ID: `). Diesen müssen wir uns erst bei AWS generieren.
 

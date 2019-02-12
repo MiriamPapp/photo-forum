@@ -31,22 +31,6 @@ on its website.
    ```
    This command must work without any error and it should print the version number of
    your aws commandline installation.
-3. Download the `aws-vault-windows-386.exe` file from the aws-vault
-   [download page](https://github.com/99designs/aws-vault/releases). Store the file
-   in your `Download folder`.
-4. In your (still opened) windows shell (the black command line window) enter the following
-   command (this is one line!):  
-
-   ```Shell
-   copy %USERPROFILE%\Downloads\aws-vault-windows-386.exe %PHOTOFORUM%\py\Scripts\aws-vault.exe
-   ```
-5. Enter the following command:   
- 
-   ```Shell
-   aws-vault --version
-   ```
-   This command must work without any error and it should print the version number of
-   your aws-vault installation.
 
 
 # Installation on Mac-OS
@@ -67,18 +51,6 @@ on its website.
    ```
    This command must work without any error and it should print the version number of
    your aws command line tool.
-3. Now run the following command:
-
-   ```Shell
-   brew cask install aws-vault
-   ```
-   To check if the installation worked enter the following command:
-
-   ```Shell
-   aws-vault --version
-   ```
-   This command must work without any error and it should print the version number of
-   your aws-vault tool.
    
 # Result
 
