@@ -71,7 +71,7 @@ You save the keys on your computer and have then very easily access to your AWS 
 Please open a terminal window again (or the Windows shell on Windows). Enter the following
 command (and do not enter anythin afterwards):
 ```Shell
-aws configure --profile forumadmin
+aws configure --profile awsadmin
 ```
 The program now asks for your accesskey id. We have to generate it first in the AWS console.
 
@@ -127,7 +127,7 @@ Now enter your region identifier into the aws program and press Enter.
 
 To check the configured aws program issue the following command:
 ```Shell
-aws iam get-user --profile forumadmin
+aws iam get-user --profile awsadmin
 ```
 
 This should print some cryptic information which may look like this:
