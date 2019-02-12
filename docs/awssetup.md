@@ -8,14 +8,14 @@ Diese Seite ist auch [auf Deutsch](../awssetup_de) verfügbar.
 
 **A warning first:** This setup description is created to assist people with
 average computer knowledge. That's why it doesn't make use of more advanced
-(and more secure) features of the AWS security system. Namely MFA and
-cross-account access are not used.   
+(and more secure) features of the AWS security system. Namely MFA, IAM admins
+and cross-account access are not used. This is a security flaw but it is by design!   
 This also means that you should **NOT** use the here created AWS account for
 any other activities on AWS. If you need an additional account create one with
 a different e-mail address!  
 If you already own an AWS account please create a new one for Photo-forum.   
 If you use multiple accounts you can simplify the handling by using different
-browsers for the different accounts - for example Firefox for one acocunt and
+browsers for the different accounts - for example Firefox for one account and
 Chrome for the other.
 
 First go to the [AWS homepage](https://aws.amazon.com/free/). If you never
@@ -41,21 +41,7 @@ are very low.
 If you created your root account you can login and logout to/from AWS within the AWS console.   
 Please ensure that you keep your login credentials safe and accessible!
 
-# IAM users
-
-For security reasons we will use
-[IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
-users for the real work - these are
-users within your root account which can get different rights. So you can create users
-with admin rights, users with moderator rights, ordinary users and so on. These IAM users
-are no "real" AWS users - think of them as users in a sub-system of your AWS-root account.
-
-If you are interested in AWS account security please
-have a look at the
-[IAM best practices document](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-in the AWS documentation.
-
-# IAM: create your administrative IAM user
+# Enable aws-cli access
 
 In the AWS management console (the thing you see after logging in) select "Services" at the upper left
 corner and choose the IAM service. You can use the search field at the top of the services overview.
