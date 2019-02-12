@@ -116,7 +116,7 @@ The regions have different prices - see
 [this page](https://aws.amazon.com/s3/pricing/?nc1=h_ls) for more information and look
 for the `S3 Standard Storage`, `Request pricing S3 Standard` and `Data Transfer pricing`
 information.    
-I couldn't find a simple region list for the `Amazon S3` service which we will use but
+I couldn't find a simple region list for the `Amazon S3` service but
 to look up the region identifiers have
 a look at the [endpoint list](https://docs.aws.amazon.com/general/latest/gr/rande.html)
 and compare the region names with the ones from the prices page.
