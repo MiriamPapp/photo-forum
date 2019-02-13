@@ -95,4 +95,4 @@ Homebrew for the [Python installation](../pythonsetup).
 You got a working node.js installation which can be used for your administrative tasks.
 You have also install Angular-cli and the compiler for the Typescript language.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to install git.
+Now go back to the _"[Prerequisites page](../prerequisites)"_ and follow the instructions to install git.

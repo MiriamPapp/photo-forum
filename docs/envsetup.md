@@ -98,7 +98,7 @@ create undesired behaviour.
    
 2. On Mac-OS your running shell should be the `Bourne again shell`(bash). If you use Linux it should
    be bash too - on other Unix like systems you have to adapt the following steps for your shell.   
-   To check your running shell exec ute the following command:
+   To check your running shell execute the following command:
    ```Shell
    env | grep ^SHELL=
    ```
@@ -132,4 +132,4 @@ create undesired behaviour.
 The result of your work is the defined environment variable and the top level directory
 which will contain all needed tools to run Photo-Forum.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to install Python.
+Now go back to the _"[Prerequisites page](../prerequisites)"_ and follow the instructions to install Python.

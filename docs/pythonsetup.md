@@ -8,7 +8,7 @@ Diese Seite ist auch [auf Deutsch](../pythonsetup_de) verfügbar.
 
 In order to install Python on your system you need to do the steps
 in _"[Set up your installation environment](../envsetup)"_ first.   
-See the _"[Start page](../index)"_ for an overview.
+See the _"[Prerequisites page](../prerequisites)"_ for an overview.
 
 # Download the correct Python installer
 
@@ -110,4 +110,4 @@ to use the command names python3 and pip3 instead of python or pip.
 
 You got a working Python installation which can be used for the next installation steps.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to install node.js.
+Now go back to the _"[Prerequisites page](../prerequisites)"_ and follow the instructions to install node.js.

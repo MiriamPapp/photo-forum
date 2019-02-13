@@ -9,7 +9,7 @@ Diese Seite ist auch [auf Deutsch](../awstoolssetup_de) verfügbar.
 In order to install the aws tools on your system you need to do the steps
 in _"[Set up your installation environment](../envsetup)"_ 
 and in _"[How to install Python on your computer](../pythonsetup)"_ first.   
-See the _"[Start page](../index)"_ for an overview.
+See the _"[Prerequisites page](../prerequisites)"_ for an overview.
 
 Amazon describes the
 [installation of aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
@@ -56,4 +56,4 @@ on its website.
 
 You got a working aws tools installation which will be used for handling the AWS infrastructure setup.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to create your AWS accounts.
+Now go back to the _"[Prerequisites page](../prerequisites)"_ and follow the instructions to create your AWS accounts.

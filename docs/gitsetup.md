@@ -8,7 +8,7 @@ Diese Seite ist auch [auf Deutsch](../gitsetup_de) verfügbar.
 
 In order to install Python on your system you need to do the Steps
 in _"[Set up your installation environment](../envsetup)"_ first.   
-See the _"[Start page](../index)"_ for an overview.
+See the _"[Prerequisites page](../prerequisites)"_ for an overview.
 
 # Installation on MS Windows
 
@@ -55,4 +55,4 @@ Homebrew for the [Python installation](../pythonsetup).
 
 You got a working git installation which can be used for the next installation steps.
 
-Now go back to the _"[Start page](../index)"_ and follow the instructions to install the aws tools.
+Now go back to the _"[Prerequisites page](../prerequisites)"_ and follow the instructions to install the aws tools.
