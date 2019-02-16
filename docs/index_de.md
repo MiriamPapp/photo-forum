@@ -4,6 +4,7 @@ title: Wie Sie ein Photo-Forum erstellen
 subtitle: '2018-12-24, letzte Änderung: 2019-02-16'
 ---
 This page is also available [in English](../index).
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 **Achtung**: Dieses Projekt ist noch in einem sehr frühen Entwicklungsstadium. Es gibt noch
  keine benutzbaren Funktionen.   
@@ -12,6 +13,11 @@ This page is also available [in English](../index).
  Falls Sie dann Anmerkungen oder Korrekturen haben, können Sie diese an
  die E-Mail-Adresse [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com) schicken.
  Es gibt auch ein [Support-Forum bei YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support). Dort können Sie auf Deutsch oder Englisch schreiben.
+
+ Ich freue mich natürlich auch, wenn Sie dem Projekt [auf github](https://github.com/fte378/photo-forum)
+ einen Stern verpassen:   
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/fte378/photo-forum" data-icon="octicon-star" data-show-count="true" aria-label="Star fte378/photo-forum on GitHub">Star</a>
 
 # Überblick
 

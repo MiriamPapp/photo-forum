@@ -3,10 +3,16 @@ title: How to host a Photo-Forum
 subtitle: '2018-12-24, last change 2019-02-13'
 ---
 Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 **Attention**: This is work in progress and in a very early stage. There is nothing usable yet.   
 If you want to help you can test this documentation at the moment.   
 In case you want to provide feedback, send it to [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com). There is also a [support forum at YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support).
+
+I also appreciate when you give [this project](https://github.com/fte378/photo-forum)
+a star:
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/fte378/photo-forum" data-icon="octicon-star" data-show-count="true" aria-label="Star fte378/photo-forum on GitHub">Star</a>
 
 # Introduction
 
