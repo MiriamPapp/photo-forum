@@ -11,5 +11,4 @@ before Google+ shuts down.
 You can find me through hese Links:
 
 [Blog](https://frank.tegtmeyer.net/) | [Instagram](https://www.instagram.com/frank.tegtmeyer/) |
-[500px](https://500px.com/fte368/) | [Diaspora](https://diaspora.subsignal.org/people/bd5b5b30b2a901361b7a00023e3c3fbc) |
-[vKontakte](https://vk.com/id515576623)
+[500px](https://500px.com/fte368/) | [Diaspora](https://diaspora.subsignal.org/people/bd5b5b30b2a901361b7a00023e3c3fbc)
