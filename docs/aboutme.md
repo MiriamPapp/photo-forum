@@ -5,8 +5,7 @@ permalink: /aboutme/
 lang: en
 ---
 
-My name is Frank Tegtmeyer. I'm member of a photo community which looks for a Google+ community replacement
-before Google+ shuts down.
+My name is Frank Tegtmeyer. I'm member of a photo community which looks for a Google+ community replacement.
 
 You can find me through hese Links:
 
