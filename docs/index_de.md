@@ -11,7 +11,7 @@ This page is also available [in English](../index).
  testen.   
  Falls Sie dann Anmerkungen oder Korrekturen haben, können Sie diese an
  die E-Mail-Adresse [photo.forum.project@gmail.com](mailto:photo.forum.project@gmail.com) schicken.
- Es gibt auch ein [Support-Forum bei YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support).
+ Es gibt auch ein [Support-Forum bei YouMe.social](https://www.youme.social/groups/view/102/photo-forum-support). Dort können Sie auf Deutsch oder Englisch schreiben.
 
 # Überblick
 
