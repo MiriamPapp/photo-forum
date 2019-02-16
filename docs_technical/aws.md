@@ -18,4 +18,9 @@ The following services are used:
 * CloudFront  
   The contents of the S3 bucket should be hosted through CloudFront - at least
   the Angular application.
-  
+
+
+Alternatively wasabi.com could be used. For a typical forum which is really used
+the price structure of Wasabi's "Unlimited Egress Pricing Plan" should be **always**
+a better fit than Amazon S3.   
+I will think about supporting both or only wasabi.com.
