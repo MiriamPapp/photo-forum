@@ -123,5 +123,5 @@ Um die neue Installation zu benutzen müssen Sie die Kommandos python3 und pip3 
 Das Ergebnis der Arbeitsschritte ist eine Python-Installation, die durch die folgenden
 Arbeitsschritte benutzt werden kann.
 
-Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
-zur Installation von node.js.
+Machen Sie nun mit der Seite _"[Voraussetzungen](../prerequisites_de)"_ weiter und folgen
+Sie den Anweisungen zur Installation von node.js.

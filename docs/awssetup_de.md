@@ -139,3 +139,7 @@ ungefähr so aussehen:
     }
 }
 ```
+
+Jetzt haben Sie alle Voraussetzungen abgearbeitet. Sie können nun mit
+der Installation der Software bei AWS weitermachen - wechseln Sie dazu
+wieder auf die [Startseite](../index_de).

@@ -93,5 +93,5 @@ Das Ergebnis der Arbeitsschritte ist eine node-Installation, die durch Sie für 
 Administrationsarbeiten benutzt werden kann. Ebenso stehen Ihnen die Angular-Umgebung und
 der Typescript-Compiler zur Verfügung.
 
-Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
-zur git-Installation.
+Machen Sie nun mit der Seite _"[Voraussetzungen](../prerequisites_de)"_ weiter und folgen
+Sie den Anweisungen zur git-Installation.

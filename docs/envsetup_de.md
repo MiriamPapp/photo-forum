@@ -153,5 +153,5 @@ Zeilenwechseln kann zu unerwünschten Ergebnissen führen.
 Das Ergebnis dieser Arbeitsschritte ist eine definierte Umgebungsvariable und das
 angelegte Verzeichnis, in dem alle folgenden Komponenten installiert werden.
 
-Nun können Sie wieder zur _"[Startseite](../index_de)"_ wechseln und mit der Anleitung
-zur Installation von Python weitermachen.
+Nun können Sie wieder zur Seite _"[Voraussetzungen](../prerequisites_de)"_ wechseln
+und mit der Anleitung zur Installation von Python weitermachen.

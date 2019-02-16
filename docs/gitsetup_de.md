@@ -58,5 +58,5 @@ bei der [Python-Installation](../pythonsetup_de) verwendet.
 Das Ergebnis der Arbeitsschritte ist eine git-Installation, die durch die folgenden
 Arbeitsschritte benutzt werden kann.
 
-Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
-zur Installation der AWS-Programme.
+Machen Sie nun mit der Seite _"[Voraussetzungen](../prerequisites_de)"_ weiter und
+folgen Sie den Anweisungen zur Installation der AWS-Programme.

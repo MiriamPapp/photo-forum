@@ -1,6 +1,6 @@
 ---
 title: How to host a Photo-Forum
-subtitle: 'posted: 2018-12-24'
+subtitle: '2018-12-24, last change 2019-02-13'
 ---
 Diese Seite ist auch [auf Deutsch](./index_de) verfügbar.
 

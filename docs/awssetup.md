@@ -129,4 +129,4 @@ This should print some cryptic information which may look like this:
 ```
 
 Now you have finished your prerequisites setup. You may continue with the software installation
-on AWS described in the [Start page](../index).
+on AWS described on the [Start page](../index).

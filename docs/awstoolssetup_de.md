@@ -55,5 +55,5 @@ auf seiner Webseite.
 Das Ergebnis der Arbeitsschritte ist eine aws-Programm-Installation, die für folgende
 Installationsschritte benutzt werden kann.
 
-Machen Sie nun mit der _"[Startseite](../index_de)"_ weiter und folgen Sie den Anweisungen
-zur Einrichtung Ihrer AWS-Konten.
+Machen Sie nun mit der Seite _"[Voraussetzungen](../prerequisites_de)"_ weiter und
+folgen Sie den Anweisungen zur Einrichtung Ihrer AWS-Konten.
