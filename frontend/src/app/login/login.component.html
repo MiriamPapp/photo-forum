@@ -1,0 +1,15 @@
+  <div *ngIf="notLoggedIn; then showform else showlogin"></div>
+  <ng-template #showform>
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()" #login="ngForm">
+        <div class="form-group">
+            <label for="accesskey">Access Key</label>
+            <input type="text" class="form-control" [(ngModel)]="accesskey" id="accesskey" name="accesskeyfc" required> out: {{accesskey}}
+            <br>
+            <label for="secretkey">Secret Key</label>
+            <input type="text" class="form-control" [(ngModel)]="secretkey" id="seretkey" name="secretkeyfc" required> out: {{secretkey}}
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </ng-template>
+  <ng-template #showlogin><div>Logged in!</div></ng-template>
