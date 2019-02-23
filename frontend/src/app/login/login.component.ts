@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AwssessionService } from '../services/awssession.service';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  accesskey: string = 'ak';
-  secretkey: string = 'sk';
+  accesskey: string = '';
+  secretkey: string = '';
+  accessKeysFoundInStore: boolean = false;
   
   notLoggedIn = true;
 
@@ -16,9 +18,14 @@ export class LoginComponent implements OnInit {
     this.notLoggedIn = false;
   }
 
-  constructor() { }
+  constructor(private awsSessionService: AwssessionService) { 
+    
+  }
 
   ngOnInit() {
   }
 
+  isLocalStorageSupported() {
+    return typeof(Storage) !== 'undefined';
+  }
 }

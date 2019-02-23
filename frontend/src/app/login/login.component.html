@@ -4,10 +4,10 @@
     <form (ngSubmit)="onSubmit()" #login="ngForm">
         <div class="form-group">
             <label for="accesskey">Access Key</label>
-            <input type="text" class="form-control" [(ngModel)]="accesskey" id="accesskey" name="accesskeyfc" required> out: {{accesskey}}
+            <input type="text" class="form-control" [(ngModel)]="accesskey" id="accesskey" name="accesskeyfc" required>
             <br>
             <label for="secretkey">Secret Key</label>
-            <input type="text" class="form-control" [(ngModel)]="secretkey" id="seretkey" name="secretkeyfc" required> out: {{secretkey}}
+            <input type="text" class="form-control" [(ngModel)]="secretkey" id="seretkey" name="secretkeyfc" required>
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
