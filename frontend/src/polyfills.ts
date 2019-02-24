@@ -83,3 +83,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+ // See https://github.com/aws/aws-sdk-js/issues/2141
+ // aws-sdk requires global to exist
+(window as any).global = window;
