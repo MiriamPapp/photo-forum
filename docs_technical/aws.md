@@ -15,12 +15,8 @@ The following services are used:
   features.   
   It is planned to use S3 as a write-only storage for 'normal' users.
   Admin users have delete rights too to make management possible.
-* CloudFront  
-  The contents of the S3 bucket should be hosted through CloudFront - at least
-  the Angular application.
-
 
 Alternatively wasabi.com could be used. For a typical forum which is really used
 the price structure of Wasabi's "Unlimited Egress Pricing Plan" should be **always**
-a better fit than Amazon S3.   
+a better fit than Amazon S3 at least after the one year "free tier" period of Amazon.   
 I will think about supporting both or only wasabi.com.

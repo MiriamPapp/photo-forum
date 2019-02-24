@@ -23,41 +23,17 @@ application running in the users browser. Anybody would be able to
 change the application or to create a new one which doesn't guarantee
 any security at all.
 
-That's why the S3 bucket will be set to "append only" or "WORM" (write once, read multiple times). This way users
-only need the right to create new objects on the S3 bucket (and read
-rights of course).
+That's why the S3 bucket gets a security policy where users get their
+own paths where only they (and the administrator) can write. Unfortunately
+S3 policies don't support regular expressions for paths so there is
+still the possibility that users can "hide" content to use the storage
+at the expense of the forum owner. To lower this risk there will be
+a maintenance script which analyses the bucket for potential misuse
+by the end users and cleans up any unwanted objects.
 
-People can create posts and comments. Changes and deletions require
-special handling through deletion and update objects.
-
-Over time the S3 bucket my be filled by update and delete objects.
-The owner of the forum gets a maintenance program which consolidates
-all images/posts/comments/pluses/votings.
-
-## Cases for content changes
-
-1. **Creation of new posts**   
-   Creating of new posts is simple. They will be created as new
-   objects on the S3 bucket.
-2. **Adding comments**   
-   Comments will be added as new objects to the S3 Bucket.
-3. **Deletion of content**   
-   Deletion of posts or comments is handled by creating "deletion
-   objects" on the S3 bucket. Of course a deletion object can be
-   created by any user for any object. Therefor clients reading
-   and interpreting the contents have to check if the deletion
-   object was created by the same user as the object which should
-   be deleted.
-4. **Changes to posts and comments**  
-   Changes are implemented by creating new versions of older content.
-   This **does not** use the versioning feature of S3 objects.   
-   A new version is created by creating a new "update object" on the
-   S3 bucket. Of course an update object can be
-   created by any user for any object. Therefor clients reading
-   and interpreting the contents have to check if the update
-   object was created by the same user as the object which should
-   be updated.   
-   The update object contains the full new content for the object.
+Because users store content in their "own" paths deletions and updates
+are easy - the old object will be deleted in case of content deletions
+or deleted and created in the new form again when updating an object.
 
 ## Format of the objects
 
@@ -90,49 +66,6 @@ Fields:
 * **ref_post** (mandatory)   
   reference to the post the comment was made on
 
-### Post update object
-
-A post update object can only be used to update the text. Updating the
-image is not supported.
-
-Fields:
-
-* **text** (mandatory)   
-  The new text of the post.
-* **ref_post** (mandatory)  
-  The reference to the post which will be updated.
-
-### Comment update object
-
-Fields:
-
-* **text** (mandatory)   
-  The updated text of the comment.
-* **ref_comment** (mandatory)  
-  The reference to the comment which will be updated.
-* **ref_post** (mandatory)  
-  The reference to the post where the updated comment is added.
-
-### Post delete object
-
-A post may have comments. The deletion of a post doesn't delete
-the comments also. Because clients don't display the post anymore
-the comments are also not displayed. The maintenance program has
-to collect and delete all dependent objects for a post which is deleted
-(including comments).
-
-Fields:
-
-* **ref_post** (mandatory)  
-  The reference to the post which should be deleted.
-
-### Comment delete object
-
-Fields:
-
-* **ref_comment** (mandatory)  
-  The reference to the comment which should be deleted.
-
 ### Plus object for posts
 
 Google+ has "Pluses" on posts and comments. This object represents
@@ -148,24 +81,3 @@ Fields:
 
 * **ref_comment** (mandatory)  
   The reference to the post the plus is for.
-
-### Plus delete object for posts
-
-Pluses can also be deleted again.
-
-Fields:
-
-* **ref_pluspost** (mandatory)   
-  Reference to the plus which should be deleted.
-* **ref_post** (mandatory)   
-  Reference to the post on which the plus should be deleted.
-
-### Plus delete object for comments
-
-Fields:
-
-* **ref_pluscomment** (mandatory)   
-  Reference to the plus which should be deleted.
-* **ref_comment** (mandatory)   
-  Reference to the post on which the plus should be deleted.
-

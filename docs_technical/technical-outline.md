@@ -48,18 +48,19 @@ same time S3 offers many interesting features including:
 * auto expire for documents (with automatic deletion)
 * a REST API
 * access control on document level (if necessary)
+* access control on paths (sort of)
 
-The idea is to allow any (authorized) client "create" access on the S3 bucket
-but to disallow deletions and changes to existing documents.
-Only administrators (or Lambda functions on AWS) are allowed to replace/change
-documents.
+The idea is to allow any (authorized) client to create, update and delete object
+in paths where it got the right to. To (most) other paths the client has
+read access to. There are also some protected paths which are only accessible by
+moderators.
 
 Clients (the web application running in the browser) get the documents they are
-interested in by selecting through names(?). They can also fetch linked but
-missing documents (or ignore the linking documents).
-To enable deletions of posts/comments a special document will be posted which
-flags the deletion of another document. A periodically running Lambda function
-can then do the real deletion (or an administrator may do it).
+interested in by selecting through paths. They can also fetch linked but
+missing documents (or ignore the linking documents).    
+Because clients only can write to their own paths posts and comments to these
+posts don't have the same path. The post may be in the path of client A and
+the comments to this post may be distributed through all paths of other users.
 
 Old content can be cleaned up by auto-expire of S3. This feature works on paths,
 so categories excluded from auto-expire must be placed under a special S3 path.
