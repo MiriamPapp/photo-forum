@@ -10,7 +10,10 @@ It will even be usable as a family photo-album.
 The software is intended to be used by some photographers who I (the author) know but it may be used
 also by anyone else including non-photographers.
 
-The software is designed to be hosted at AWS (Amazon Web Services). It is designed to keep
+The software is designed to be hosted at services providing the S3 API known from AWS
+(Amazon Web Services). The ones I know at the moment are AWS itself and
+[wasabi.com](https://www.wasabi.com/).    
+The software is designed to keep
 the costs at a minimum, so anybody should be able to host their own forum without the need
 to accept advertising or get restrictions on contents.
 
