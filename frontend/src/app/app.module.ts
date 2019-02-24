@@ -7,13 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { OverviewComponent } from './overview/overview.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    OverviewComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
