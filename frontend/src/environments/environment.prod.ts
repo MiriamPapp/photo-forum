@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  forumversion: '0.1',
 };
