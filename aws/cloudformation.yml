@@ -252,4 +252,6 @@ Outputs:
     Value: !Ref ContentsBucket
   ContentsBucketArn:
     Value: !GetAtt ContentsBucket.Arn
+  ContentsBucketEndpoint:
+    Value: !GetAtt ContentsBucket.DualStackDomainName
   
