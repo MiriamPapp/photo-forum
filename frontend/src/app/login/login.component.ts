@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AwssessionService } from '../services/awssession.service';
+import { Router } from '@angular/router';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
 
 @Component({
   selector: 'app-login',
@@ -15,12 +17,16 @@ export class LoginComponent implements OnInit {
   notLoggedIn = true;
 
   onSubmit() {
-    this.notLoggedIn = false;
+    this.awsSessionService.setKeys(this.accesskey, this.secretkey);
+    if (this.awsSessionService.isLoggedIn()) {
+      this.router.navigate(['/']);
+    }
   }
 
-  constructor(private awsSessionService: AwssessionService) { 
-    
-  }
+  constructor(
+    private awsSessionService: AwssessionService,
+    private router: Router)
+    { }
 
   ngOnInit() {
   }
