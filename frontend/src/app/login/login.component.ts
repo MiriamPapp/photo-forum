@@ -12,13 +12,15 @@ export class LoginComponent implements OnInit {
 
   accesskey: string = '';
   secretkey: string = '';
-  accessKeysFoundInStore: boolean = false;
   
   notLoggedIn = true;
 
-  onSubmit() {
-    this.awsSessionService.setKeys(this.accesskey, this.secretkey);
-    if (this.awsSessionService.isLoggedIn()) {
+  async onSubmit(): Promise<void> {
+    const loggedIn = await this.awsSessionService.setKeys(this.accesskey, this.secretkey);
+    console.log('logged in:', loggedIn);
+    if (loggedIn) {
+      this.notLoggedIn = false;
+      console.log('redirect to overview');
       this.router.navigate(['/']);
     }
   }
@@ -29,9 +31,5 @@ export class LoginComponent implements OnInit {
     { }
 
   ngOnInit() {
-  }
-
-  isLocalStorageSupported() {
-    return typeof(Storage) !== 'undefined';
   }
 }
