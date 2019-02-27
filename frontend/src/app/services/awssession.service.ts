@@ -26,10 +26,9 @@ export class AwssessionService {
         apiVersion: 'latest',
         signatureVersion: 'v4'
       });
-      const extThis = this;
       // check if S3 is really connected
       try {
-        const s3list = await this.awsS3.listObjectsV2({ Bucket: environment.contentBucketName, Delimiter: '/' }).promise();
+        await this.awsS3.listObjectsV2({ Bucket: environment.contentBucketName, Delimiter: '/' }).promise();
         this.awsSessionEstablished = true;
       }
       catch(error) {
