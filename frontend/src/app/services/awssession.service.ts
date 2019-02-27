@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { S3, AWSError } from 'aws-sdk';
+import { S3 } from 'aws-sdk';
 import { environment } from 'src/environments/environment';
-import { ListObjectsV2Output } from 'aws-sdk/clients/s3';
 
 @Injectable({
   providedIn: 'root'
