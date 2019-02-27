@@ -8,20 +8,14 @@ import { ListObjectsV2Output } from 'aws-sdk/clients/s3';
 })
 export class AwssessionService {
 
-  accesskey: string;
-  secretkey: string;
-  keysAreSet: boolean;
   awsSessionEstablished: boolean;
   awsS3: S3;
 
   constructor() {
-    this.keysAreSet = false;
     this.awsSessionEstablished = false;
-    this.accesskey = '';
-    this.secretkey = '';
   }
 
-  setKeys(accessKey: string, secretKey: string) {
+  async setKeys(accessKey: string, secretKey: string): Promise<boolean> {
       this.awsS3 = new S3({
         region: environment.region,
         endpoint: environment.contentBucketEndpoint,
@@ -33,16 +27,20 @@ export class AwssessionService {
         apiVersion: 'latest',
         signatureVersion: 'v4'
       });
-      this.awsS3.listObjectsV2(
-        {Bucket: environment.contentBucketName , Delimiter: '/'},
-        function(err: AWSError, data: ListObjectsV2Output) {
-          if (err) {
-            console.log(err);
-          } else {
-            console.log(data);
-          }
-        }
-      );
+      const extThis = this;
+      // check if S3 is really connected
+      try {
+        const s3list = await this.awsS3.listObjectsV2({ Bucket: environment.contentBucketName, Delimiter: '/' }).promise();
+        this.awsSessionEstablished = true;
+      }
+      catch(error) {
+        this.awsSessionEstablished = false;
+      }
+      return this.awsSessionEstablished;
+  }
+
+  getS3(): S3 {
+    return this.awsS3;
   }
 
   isLoggedIn(): boolean {
