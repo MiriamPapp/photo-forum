@@ -1,22 +1,22 @@
 import { TestBed } from '@angular/core/testing';
 import { AuthGuardService } from './auth-guard.service';
+import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { AwssessionService } from './awssession.service';
-import { AppRoutingModule } from '../app-routing.module';
-import { Router } from '@angular/router';
+import { bool } from 'aws-sdk/clients/signer';
+
+class MockRouter {
+  navigate(path) { }
+}
 
 describe('AuthGuardService', () => {
 
-/*
   beforeEach(() => {
-    const loggedInSpy = jasmine.createSpyObj('AwssessionService', ['isLoggedIn']);
     TestBed.configureTestingModule({
       providers: [
         AuthGuardService,
-        { provide: AwssessionService, useValue: loggedInSpy }
+        { provide: Router, useClass: MockRouter },
       ]
     });
-    authguardservice = TestBed.get(AuthGuardService);
-    awssessionspy = TestBed.get(AwssessionService);
   });
 
   it('should be created', () => {
@@ -25,8 +25,19 @@ describe('AuthGuardService', () => {
   });
 
   it('should return canActivate=true when logged in', () => {
-    awssessionspy.isLoggedIn.and.returnValue(true);
-    expect(authguardservice.canActivate(null,null)).toBe(true);
+    const fakesession = {isLoggedIn: () =>  true}; 
+    const authguard = new AuthGuardService(
+      new MockRouter() as Router, fakesession as AwssessionService);
+    expect(authguard.canActivate(
+      {} as ActivatedRouteSnapshot, {} as RouterStateSnapshot)).toBe(true);
   });
-*/
+
+  it('should return canActivate=false when not logged in', () => {
+    const fakesession = {isLoggedIn: () =>  false}; 
+    const authguard = new AuthGuardService(
+      new MockRouter() as Router, fakesession as AwssessionService);
+      expect(authguard.canActivate(
+      {} as ActivatedRouteSnapshot, {} as RouterStateSnapshot)).toBe(false);
+  });
+
 });
