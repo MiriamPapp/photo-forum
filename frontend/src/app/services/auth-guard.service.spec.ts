@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { AuthGuardService } from './auth-guard.service';
 import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { AwssessionService } from './awssession.service';
-import { bool } from 'aws-sdk/clients/signer';
 
 class MockRouter {
   navigate(path) { }
