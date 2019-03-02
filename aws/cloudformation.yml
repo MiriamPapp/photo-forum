@@ -141,6 +141,23 @@ Resources:
                 s3:prefix: "config/"
                 s3:delimiter: "/"
 
+  PolicyReadUserConfig:
+    Type: AWS::IAM::ManagedPolicy
+    Description: Read the user data of the authenticated user
+    Properties:
+      ManagedPolicyName: ReadUserConfig
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - s3:GetObject
+            Resource: !Join
+              - ""
+              - - !GetAtt ContentsBucket.Arn
+                - "/config/${aws:username}/*"
+
   PolicyListFoldersInOpenChannels:
     Type: AWS::IAM::ManagedPolicy
     Description: Allow browsing of open channels
