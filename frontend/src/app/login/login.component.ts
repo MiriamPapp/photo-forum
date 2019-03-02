@@ -16,10 +16,8 @@ export class LoginComponent implements OnInit {
 
   async onSubmit(): Promise<void> {
     const loggedIn = await this.awsSessionService.setKeys(this.accesskey, this.secretkey);
-    console.log('logged in:', loggedIn);
     if (loggedIn) {
       this.notLoggedIn = false;
-      console.log('redirect to overview');
       this.router.navigate(['/']);
     }
   }
