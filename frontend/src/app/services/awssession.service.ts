@@ -28,7 +28,8 @@ export class AwssessionService {
       });
       // check if S3 is really connected
       try {
-        await this.awsS3.listObjectsV2({ Bucket: environment.contentBucketName, Delimiter: '/' }).promise();
+        // list all objects in the root folder (empty prefix)
+        await this.awsS3.listObjectsV2({ Bucket: environment.contentBucketName, Delimiter: '/', Prefix: '' }).promise();
         this.awsSessionEstablished = true;
       }
       catch(error) {
