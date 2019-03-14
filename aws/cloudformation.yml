@@ -173,7 +173,7 @@ Resources:
             Resource: !GetAtt ContentsBucket.Arn
             Condition:
               StringEquals:
-                s3:prefix: "open/*"
+                s3:prefix: "open/"
                 s3:delimiter: "/"
 
   PolicyListObjectsInOpenChannels:
@@ -187,7 +187,7 @@ Resources:
           -
             Effect: Allow
             Action:
-              - s3:ListObjects
+              - s3:ListBucket
             Resource: !Join
               - ""
               - - !GetAtt ContentsBucket.Arn
