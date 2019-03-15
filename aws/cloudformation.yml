@@ -70,6 +70,7 @@ Resources:
         - !Ref PolicyListFoldersInOpenChannels
         - !Ref PolicyListObjectsInOpenChannels
         - !Ref PolicyObjectCreationInOpenChannels
+        - !Ref PolicyReadUserConfig
 
   ForumAdminsGroup:
     Type: AWS::IAM::Group
@@ -89,6 +90,7 @@ Resources:
         - !Ref PolicyListFoldersInClosedChannels
         - !Ref PolicyListObjectsInClosedChannels
         - !Ref PolicyObjectCreationInClosedChannels
+        - !Ref PolicyReadUserConfig
 
   PolicyShowAllBucketsOnConsole:
     Type: AWS::IAM::ManagedPolicy
@@ -153,10 +155,21 @@ Resources:
             Effect: Allow
             Action:
               - s3:GetObject
-            Resource: !Join
-              - ""
-              - - !GetAtt ContentsBucket.Arn
-                - "/config/${aws:username}/*"
+              - s3:GetObjectVersion
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringLike:
+                s3:prefix: "config/${aws:username}/${aws:username}"
+                s3:delimiter: "/"
+          -
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !GetAtt ContentsBucket.Arn
+            Condition:
+              StringLike:
+                s3:prefix: "config/${aws:username}/"
+                s3:delimiter: "/"
 
   PolicyListFoldersInOpenChannels:
     Type: AWS::IAM::ManagedPolicy
