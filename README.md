@@ -25,10 +25,6 @@ At the moment there is no usable functionality because the software is in a very
 ## Feedback and Support
 
 Use the github features or send your feedback via to photo.forum.project@gmail.com.   
-There is alo a [support group on YouMe.social](https://youme.social/groups/view/102/photo-forum-support)
-which can be used in English or German.
 
 Bitte senden Sie Rückmeldungen und Anmerkungen an die E-Mail-Adresse photo.forum.project@gmail.com oder
-benutzen Sie die Möglichkeiten, die GitHub bietet. Zusätzlich können Sie die
-[Support-Gruppe auf YouMe.social](https://youme.social/groups/view/102/photo-forum-support)
-benutzen. Dort sind Beiträge auf Deutsch oder Englisch akzeptiert.
+benutzen Sie die Möglichkeiten, die GitHub bietet.
