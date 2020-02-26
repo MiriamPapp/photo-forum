@@ -1,6 +1,6 @@
 # This project is abandoned
 
-Most of what I imagined is implemented in keybase ([keybase.io](https://keybase.io/)
+Most of what I imagined is implemented in keybase ([keybase.io](https://keybase.io/))
 
 
 
