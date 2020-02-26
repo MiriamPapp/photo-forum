@@ -2,6 +2,8 @@
 
 Most of what I imagined is implemented in keybase ([keybase.io](https://keybase.io/))
 
+I will delete the repository on May 1st (2020).
+
 
 
 # Photo-Forum
